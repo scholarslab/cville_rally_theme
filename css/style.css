@@ -26,3 +26,13 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   margin-bottom: 20px;
 }
 
+.field .inputs {
+  font-weight:normal;
+  font-size: 13px;
+}
+
+.field .input-block {
+  font-size: 1.5rem;
+}
+
+
