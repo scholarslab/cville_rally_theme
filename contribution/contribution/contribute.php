@@ -75,14 +75,14 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
                 <div class="inputs">
                     <?php $public = isset($_POST['contribution-public']) ? $_POST['contribution-public'] : 0; ?>
                     <?php echo $this->formCheckbox('contribution-public', $public, null, array('1', '0')); ?>
-                    <?php echo $this->formLabel('contribution-public', __('Publish my contribution on the web.')); ?>
+                    <?php echo $this->formLabel('contribution-public', __('You may share my contribution publicly. Uncheck to share only with approved researchers.')); ?>
                 </div>
                 <div class="inputs">
                     <?php $anonymous = isset($_POST['contribution-anonymous']) ? $_POST['contribution-anonymous'] : 0; ?>
                     <?php echo $this->formCheckbox('contribution-anonymous', $anonymous, null, array(1, 0)); ?>
-                    <?php echo $this->formLabel('contribution-anonymous', __("Keep identity private.")); ?>
+                    <?php echo $this->formLabel('contribution-anonymous', __("Do not display my name publicly. Note: If you provide your name, we are able to hide it from any resulting public exhibitions. However, we are not able to guarantee full anonymity. If you are concerned about your identity being known, we recommend not providing your name in the form above.")); ?>
                 </div>
-                <p><?php echo __("In order to contribute, you must read and agree to the %s",  "<a href='" . contribution_contribute_url('terms') . "' target='_blank'>" . __('Terms and Conditions') . ".</a>"); ?></p>
+                <p><?php echo __("In order to contribute, you must read and agree to the %s",  "<a href='" . contribution_contribute_url('terms') . "'>" . __('Terms and Conditions') . ".</a>"); ?></p>
                 <div class="inputs">
                     <?php $agree = isset( $_POST['terms-agree']) ?  $_POST['terms-agree'] : 0 ?>
                     <?php echo $this->formCheckbox('terms-agree', $agree, null, array('1', '0')); ?>
