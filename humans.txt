@@ -1,0 +1,31 @@
+/* TEAM */
+Web Design: Starrie Williamson and Joe Gilbert
+
+Omeka Theme: Wayne Graham & Jeremy Boggs
+
+Twitter: @starriebird & @joegilbert & @wayne_graham & @clioweb
+
+Site: http://lib.virginia.edu & http://scholarslab.org
+
+Location: Charlottesville, Virginia, USA
+
+/* Source */
+
+Github: https://github.com/waynegraham/uva_theme
+
+/* TECHNOLOGY */
+Last update: 2012/06/23
+
+Standards: HTML5, CSS3
+
+Components: jQuery, Modernizr, jQueryUI, SCSS, coffee
+
+Software: Omeka, MySQL, PHP, vim, guard
+
+
+  ______          __             __                       _   _____            __        
+.' ____ \        [  |           [  |                     | | |_   _|          [  |       
+| (___ \_| .---.  | |--.   .--.  | |  ,--.   _ .--.  .--.\_|   | |      ,--.   | |.--.   
+ _.____`. / /'`\] | .-. |/ .'`\ \| | `'_\ : [ `/'`\]( (`\]     | |   _ `'_\ :  | '/'`\ \ 
+| \____) || \__.  | | | || \__. || | // | |, | |     `'.'.    _| |__/ |// | |, |  \__/ | 
+ \______.''.___.'[___]|__]'.__.'[___]\'-;__/[___]   [\__) )  |________|\'-;__/[__;.__.'

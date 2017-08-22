@@ -1,0 +1,219 @@
+/*@import 'base';*/
+@import '1140';
+@import 'uva';
+@import 'bootstrap/mixins';
+@import 'bootstrap/variables';
+@import 'bootstrap/pagination';
+@import 'bootstrap/pager';
+@import 'compass';
+
+// @import url(http://fonts.googleapis.com/css?family=PT+Mono);
+
+body {
+  font-family: "ff-dagny-web-pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+#main {
+  h1 {
+    color:#51823f;
+  }
+
+  img {
+    max-width: 97%;
+  }
+}
+
+
+.explanation {
+  font-weight: normal;
+}
+
+
+.results {
+  .item {
+    &:not(:first-child):before {
+      width: 20%;
+      margin: 3em auto;
+      display: block;
+      background-color: #ddd;
+      height:1px;
+      text-align: center;
+    }
+
+    .item-img {
+      float: right;
+      margin-left: 1.5em;
+    }
+  }
+}
+
+
+
+ul.recent-items {
+  margin-bottom: 1.5em;
+
+  a {
+    display:block;
+    padding: 1.5em 0 !important;
+    border-bottom: 1px dotted #ccc;
+  }
+}
+
+// search from neatline.org
+#uva-simple-search {
+  font-size: 80% !important;
+  margin: 0 auto 1em;
+  position: relative;
+  width: 200px;
+  box-sizing:border-box;
+
+  input {
+    display:inline;
+    @include background-clip(padding-box);
+    border-width: 1px;
+
+    &[type="text"] {
+      text-align:left;
+      background: #f5f5f5;
+      border-color: #999;
+      font-size: 12px;
+      height: 18px;
+      margin: 0;
+      padding: 4px 3%;
+      width: 60%;
+      @include border-radius(6px 0 0 6px);
+    }
+
+    &[type="submit"] {
+      background: #aaa;
+      border-color: #777;
+      color: #333;
+      font-size: 12px;
+      font-weight: 700;
+      height: 28px;
+      line-height: 22px;
+      margin: 0 0 0 -1px;
+      vertical-align: middle;
+      min-width: 58px;
+      width: 14%;
+      @include background-image(linear-gradient(top, #eee, #bbb));
+      @include border-radius(0 6px 6px 0);
+      @include text-shadow(0 1px 0 #eee);
+
+      &:active {
+        top:0;
+      }
+    }
+  }
+}
+
+// contribution form additions
+legend {
+  padding: 0.9em 0 1.0em;
+  font-size: 1.333em;
+  font-family: "prenton", "Helvetica Neue", Arial, sans-serif;
+  color: #4B676E;
+}
+
+.field {
+  margin: 1.4em;
+  font-weight: bold;
+
+  .normal {
+    font-weight: normal;
+  }
+}
+
+#content {
+  .container {
+    margin-right: 60px;
+  }
+}
+
+
+#contribution-confirm-submit {
+  .inputs {
+    margin: 1.333em 0;
+  }
+}
+
+#form-submit {
+  margin: 1.333em 0;
+}
+
+p {
+  overflow: wrap;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.element-set {
+  h2 {
+    margin: 0 0 0.67em;
+  }
+}
+
+.pager {
+  margin-left:0;
+  margin-right:0;
+  padding:0;
+  margin-top: 3em;
+  a {
+    text-decoration:none;
+    font-size: 80%;
+  }
+}
+
+.item-img {
+  img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.item-type-email {
+  border: 1px solid rgba(0,0,0,0.05);
+  background: rgba(255,255,255,0.5);
+  padding: 1.5em 5%;
+  font-size: 80%;
+  h2 {
+    font-size: 150% !important;
+    color: #555;
+  }
+
+  p {
+    margin-left: 1.5em;
+  }
+}
+
+#itemfiles {
+  margin-bottom: 1.5em;
+}
+
+.kicker {
+  margin-bottom:0 !important;
+  font-style:italic;
+  color: #999;
+  font-family: Georgia, serif;
+  font-size:0.8em;
+
+  + * {
+    margin-top:0 !important;
+  }
+}
+
+.row {
+  min-width: 20px !important;
+}
+
+#content .container {
+  margin-right:0 !important;
+}
+
+video {min-height: 530px; }
+
+.contribution {
+  min-height: 1145px;
+}
