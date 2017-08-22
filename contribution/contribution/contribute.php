@@ -21,7 +21,7 @@ if(get_option('contribution_user_profile_type') && plugin_is_active('UserProfile
     queue_css_string("input.add-element {display: block}");
 }
 
-$head = array('title' => 'Share',
+$head = array('title' => 'Contribute Materials',
               'bodyclass' => 'contribution');
 echo head($head); ?>
 <script type="text/javascript">
