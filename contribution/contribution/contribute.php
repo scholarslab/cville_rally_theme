@@ -49,7 +49,7 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
 <p>If you wish to donate physical materials, please contact Special Collections directly. To nominate other people's online work for capture, please use our URL capture form.</p>
 <p>If you have a large number of items, or large-sized files to contribute:</p>
 <ul>
-<li>The best way to submit materials is through the form below. If your file is too big to upload, please contact us at digital_collecting@virginia.edu and we’ll be happy to help.</li>
+<li>The best way to submit materials is through the form below. If your file is too big to upload, please contact us at <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a> and we’ll be happy to help.</li>
 <li>If you have a large number of files to submit and you'd rather not use the individual uploader below, you can instead use the form below to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).</li>
 <li>Note: We will make our best effort to capture media submitted through the linked form above but, due to high volume, we cannot fully commit to scraping all materials received in this way.</li>
 </ul>
