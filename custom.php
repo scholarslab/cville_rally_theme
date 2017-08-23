@@ -30,3 +30,8 @@ add_filter(
     array('ElementForm', 'Item', 'Dublin Core', 'Contributor'),
     'filter_contribution_contributor'
 );
+
+add_filter(
+    array('ElementForm', 'Item', 'Dublin Core', 'Abstract'),
+    'filter_contribution_abstract'
+);
