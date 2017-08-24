@@ -22,7 +22,7 @@ add_filter(
 );
 
 add_filter(
-    array('ElementForm', 'Item', 'Dublin Core', 'Coverage'),
+    array('ElementForm', 'Item', 'Dublin Core', 'Spatial Coverage'),
     'filter_contribution_coverage'
 );
 
