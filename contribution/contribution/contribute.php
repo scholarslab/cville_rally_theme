@@ -45,15 +45,19 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
         <p>You must <a href='<?php echo url('guest-user/user/register'); ?>'>create an account</a> or <a href='<?php echo url('guest-user/user/login'); ?>'>log in</a> before contributing. You can still leave your identity to site visitors anonymous.</p>
     <?php else: ?>
     <div id="contribution-introduction">
-<p>This form is for submission of <em><strong>your personal digital documentation</strong></em> related to the events around August 12, 2017 in Charlottesville, VA.</p>
-<p>If you wish to donate physical materials, please <a href="https://small.lib.virginia.edu/reference-request/">contact Special Collections</a> directly. To nominate <em>other people's online work</em> for capture, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWD06gQiZ35z_HB57sulIV_BRdfGakcTCzO9fVn4Sc8INRwQ/viewform">please use our URL capture form</a>.</p>
-<p>If you have a large number of items, or large-sized files to contribute:</p>
-<ul>
-<li><strong>The best way to submit materials is through the form below.</strong> If your file is too big to upload, please contact us at <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a> and we’ll be happy to help.</li>
-<li>If you have a large number of files to submit and you'd rather not use the individual uploader below, you can instead use the form below to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).</li>
-<li><em><strong>Note:</strong> We will make our best effort to capture media submitted through the linked form above but, due to high volume, we cannot fully commit to scraping all materials received in this way.  </em></li>
-</ul>
-</div>
+		<p>This form is for submission of <em><strong>your personal digital documentation</strong></em> related to the events around August 12, 2017 in Charlottesville, VA.</p>
+		<p>If you wish to donate physical materials, please <a href="https://small.lib.virginia.edu/reference-request/">contact Special Collections</a> directly. To nominate <em>other people's online work</em> for capture, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWD06gQiZ35z_HB57sulIV_BRdfGakcTCzO9fVn4Sc8INRwQ/viewform">please use our URL capture form</a>.</p>
+		<p>If you have a large number of items, or large-sized files (like video) to contribute:</p>
+		<ul>
+		<li><strong>The best way to submit materials is through the form below.</strong> If your file is too big to upload, please contact us at <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a> and we’ll be happy to help.</li>
+		<li>If you have a large number of files to submit and you'd rather not use the individual uploader, you can instead use the form to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).
+		<ul>
+		<li><em><strong>Note:</strong>&nbsp;We will make our best effort to capture media linked in submitted URLs but, due to high volume, we cannot fully commit to scraping all materials received in this way.&nbsp;</em></li>
+		</ul>
+		</li>
+		</ul>
+		<p>Questions? Contact <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a>.&nbsp;</p>
+	</div>
         <form method="post" action="" enctype="multipart/form-data">
             <fieldset id="contribution-item-metadata">
                 <div class="inputs">
@@ -75,12 +79,12 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
                 <div class="inputs">
                     <?php $public = isset($_POST['contribution-public']) ? $_POST['contribution-public'] : 1; ?>
                     <?php echo $this->formCheckbox('contribution-public', $public, null, array('1', '0')); ?>
-                    <?php echo $this->formLabel('contribution-public', __('You may share my contribution publicly. Uncheck to share only with approved researchers.')); ?>
+                    <?php echo $this->formLabel('contribution-public', __('You may share my contribution publicly. Uncheck to share only with Library-approved researchers.')); ?>
                 </div>
                 <div class="inputs">
                     <?php $anonymous = isset($_POST['contribution-anonymous']) ? $_POST['contribution-anonymous'] : 0; ?>
                     <?php echo $this->formCheckbox('contribution-anonymous', $anonymous, null, array(1, 0)); ?>
-                    <?php echo $this->formLabel('contribution-anonymous', __("Do not display my <em>name</em> publicly. <strong>Note:</strong> If you provide your name, we are able to hide it from any resulting public exhibitions. However, <strong>we are not able to guarantee full anonymity</strong>. ")); ?>
+                    <?php echo $this->formLabel('contribution-anonymous', __("Do not display my name publicly. Note: If you provide your name, we are able to hide it from any resulting public exhibitions. However, we are not able to guarantee full anonymity. ")); ?>
                 </div>
                 <p><?php echo __("In order to contribute, you must read and agree to the %s",  "<a href='" . contribution_contribute_url('terms') . "'>" . __('Terms and Conditions') . ".</a>"); ?></p>
                 <div class="inputs">

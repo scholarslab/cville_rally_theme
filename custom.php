@@ -35,3 +35,8 @@ add_filter(
     array('ElementForm', 'Item', 'Dublin Core', 'Abstract'),
     'filter_contribution_abstract'
 );
+
+add_filter(
+    array('ElementForm', 'Item', 'Dublin Core', 'Creator'),
+    'filter_contribution_creator'
+);

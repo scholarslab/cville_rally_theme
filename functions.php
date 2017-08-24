@@ -38,4 +38,10 @@ function filter_contribution_abstract($components) {
     return $components;
 }
 
+function filter_contribution_creator($components) {
+    $components['label'] = "Your name (Required)";
+    $components['description'] = "";
+    return $components;
+}
+
 
