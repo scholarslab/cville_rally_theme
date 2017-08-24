@@ -6,12 +6,12 @@
  * @package Contribution
  */
 
-queue_js_file('contribution-public-form');
+queue_js_file(array('contribution-public-form','date'));
 $contributionPath = get_option('contribution_page_path');
 if(!$contributionPath) {
     $contributionPath = 'contribution';
 }
-queue_css_file('form');
+queue_css_file(array('jquery-ui','form'));
 
 //load user profiles js and css if needed
 if(get_option('contribution_user_profile_type') && plugin_is_active('UserProfiles') ) {
