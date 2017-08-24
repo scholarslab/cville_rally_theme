@@ -73,7 +73,7 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
                     <div id="captcha" class="inputs"><?php echo $captchaScript; ?></div>
                 <?php endif; ?>
                 <div class="inputs">
-                    <?php $public = isset($_POST['contribution-public']) ? $_POST['contribution-public'] : 0; ?>
+                    <?php $public = isset($_POST['contribution-public']) ? $_POST['contribution-public'] : 1; ?>
                     <?php echo $this->formCheckbox('contribution-public', $public, null, array('1', '0')); ?>
                     <?php echo $this->formLabel('contribution-public', __('You may share my contribution publicly. Uncheck to share only with approved researchers.')); ?>
                 </div>
