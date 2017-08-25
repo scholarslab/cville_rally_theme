@@ -46,18 +46,19 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
     <?php else: ?>
     <div id="contribution-introduction">
 		<p>This form is for submission of <em><strong>your personal digital documentation</strong></em> related to the events around August 12, 2017 in Charlottesville, VA.</p>
-		<p>If you wish to donate physical materials, please <a href="https://small.lib.virginia.edu/reference-request/">contact Special Collections</a> directly. To nominate <em>other people's online work</em> for capture, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWD06gQiZ35z_HB57sulIV_BRdfGakcTCzO9fVn4Sc8INRwQ/viewform">please use our URL capture form</a>.</p>
+		<p>If you wish to donate physical materials, please <a href="mailto:digital_collecting@virginia.edu?subject=Donating physical materials to Rally collection">contact Special Collections</a> directly. To nominate <em>other people's online work</em> for capture, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWD06gQiZ35z_HB57sulIV_BRdfGakcTCzO9fVn4Sc8INRwQ/viewform">please use our URL capture form</a>.</p>
 		<p>If you have a large number of items, or large-sized files (like video) to contribute:</p>
 		<ul>
-		<li><strong>The best way to submit materials is through the form below.</strong> If your file is too big to upload, please contact us at <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a> and we’ll be happy to help.</li>
-		<li>If you have a large number of files to submit and you'd rather not use the individual uploader, you can instead use the form to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).
+		<li><strong>The best way to submit materials is through the Collection Form below.</strong> If your file is too big to upload, please contact us at <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a> and we’ll be happy to help.</li>
+		<li>If you have a large number of files to submit and you'd rather not use the individual uploader, you can instead use the Collection Form below to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).
 		<ul>
-		<li><em><strong>Note:</strong>&nbsp;We will make our best effort to capture media linked in submitted URLs but, due to high volume, we cannot fully commit to scraping all materials received in this way.&nbsp;</em></li>
+		<li><em><strong>Note:</strong>&nbsp;We will make our best effort to capture media linked in submitted URLs but, due to high volume, we cannot fully commit to capturing all materials received in this way.&nbsp;</em></li>
 		</ul>
 		</li>
 		</ul>
 		<p>Questions? Contact <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a>.&nbsp;</p>
 	</div>
+		<h2>Collection Form</h2>
         <form method="post" action="" enctype="multipart/form-data">
             <fieldset id="contribution-item-metadata">
                 <div class="inputs">
