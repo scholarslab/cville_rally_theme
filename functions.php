@@ -44,4 +44,19 @@ function filter_contribution_creator($components) {
     return $components;
 }
 
+/**
+ * Checks if current view is the Contribution Form.
+ */
+function is_contribution_form() {
+    $request = Zend_Controller_Front::getInstance()->getRequest();
+    $module = $request->getModuleName();
+    $action = $request->getActionName();
+
+    if ($module == 'contribution' && $action == 'contribute') {
+        return true;
+    }
+
+    return false;
+
+}
 
