@@ -31,7 +31,7 @@ if (!isset($required) && $type->isFileAllowed()):
 ?>
 <div class="field">
         <div class="two columns alpha">
-            <?php echo $this->formLabel('contributed_file', __('Upload a file (Optional)')); ?>
+            <?php echo $this->formLabel('contributed_file', __('Upload a file')); ?>
         </div>
         <div class="inputs five columns omega">
             <?php echo $this->formFile('contributed_file', array('class' => 'fileinput')); ?>
