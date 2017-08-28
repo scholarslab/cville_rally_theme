@@ -56,7 +56,7 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
 		</li>
 		</ul>
 
-		<p>If you wish to donate physical materials, please <a href="mailto:digital_collecting@virginia.edu?subject=Donating physical materials to Rally collection">contact Special Collections</a> directly. To nominate <em>other people's online work</em> for capture, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWD06gQiZ35z_HB57sulIV_BRdfGakcTCzO9fVn4Sc8INRwQ/viewform">please use our URL capture form</a>.</p>
+		<p>If you wish to donate physical materials, please <a href="mailto:mas5by@virginia.edu?subject=Donating physical materials to Rally collection">contact Special Collections</a> directly. To nominate <em>other people's online work</em> for capture, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWD06gQiZ35z_HB57sulIV_BRdfGakcTCzO9fVn4Sc8INRwQ/viewform">please use our URL capture form</a>.</p>
 
 		<p>Questions? Contact <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a>.&nbsp;</p>
 	</div>
