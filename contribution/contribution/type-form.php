@@ -14,7 +14,7 @@ if ($type->isFileRequired()):
         <?php echo $this->formLabel('contributed_file', __('Upload a file')); ?>
     </div>
     <div class="inputs five columns omega">
-        20Mb size limit.<br>
+        250Mb size limit.<br>
         <?php echo $this->formFile('contributed_file', array('class' => 'fileinput')); ?>
     </div>
 </div>
@@ -35,7 +35,7 @@ if (!isset($required) && $type->isFileAllowed()):
             <?php echo $this->formLabel('contributed_file', __('Upload a file')); ?>
         </div>
         <div class="inputs five columns omega">
-            20Mb size limit.<br>
+            250Mb size limit.<br>
             <?php echo $this->formFile('contributed_file', array('class' => 'fileinput')); ?>
         </div>
 </div>
