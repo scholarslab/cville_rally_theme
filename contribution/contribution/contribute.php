@@ -45,9 +45,10 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
         <p>You must <a href='<?php echo url('guest-user/user/register'); ?>'>create an account</a> or <a href='<?php echo url('guest-user/user/login'); ?>'>log in</a> before contributing. You can still leave your identity to site visitors anonymous.</p>
     <?php else: ?>
     <div id="contribution-introduction">
+	<p>The form below is for submission of <em><strong>your personal digital documentation</strong></em> related to the events around August 12, 2017 in Charlottesville, VA.</p>
 		<p>If you have a large number of items, or large-sized files (like video) to contribute:</p>
 		<ul>
-		  <li><strong>The best way to submit materials is through the <a href="http://digitalcollecting.lib.virginia.edu/rally/contribution">Collections Form</a>.</strong> If your file is too big to upload, you can instead use the Collections Form to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).
+		  <li><strong>The best way to submit materials is through the Collections Form below.</strong> If your file is too big to upload, you can instead use the Collections Form to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).
 			<ul>
 			  <li><em><strong>Note:</strong> We will make our best effort to capture media linked in submitted URLs but, due to high volume, we cannot commit to fully capturing all materials received in this way. </em></li>
 			</ul>
