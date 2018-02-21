@@ -35,4 +35,25 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   font-size: 1.5rem;
 }
 
+.pagination_list {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+
+}
+
+.pagination_list li {
+    display:inline;
+}
+
+#sort-links ul {
+        display:inline;
+        list-style:none;
+        margin-left:0;
+        padding-left:0;
+    }
+
+#sort-links ul li {
+    display:inline;
+}
 
