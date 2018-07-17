@@ -60,3 +60,14 @@ function is_contribution_form() {
 
 }
 
+function filter_for_anonymity($text, $args) {
+    $record = $args['record'];
+    $contributedItem = get_db()->getTable('ContributionContributedItem')->findByItem($record);
+    
+    if ($contributedItem->anonymous != 0) {
+        $text = 'Anonymous';
+    }
+
+    return $text;
+
+}

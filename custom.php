@@ -40,3 +40,13 @@ add_filter(
     array('ElementForm', 'Item', 'Dublin Core', 'Creator'),
     'filter_contribution_creator'
 );
+
+add_filter(
+    array('Display','Item','Dublin Core', 'Creator'),
+    'filter_for_anonymity'
+);
+
+add_filter(
+    array('Display','Item','Dublin Core', 'Contributor'),
+    'filter_for_anonymity'
+);
