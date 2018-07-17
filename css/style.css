@@ -35,6 +35,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   font-size: 1.5rem;
 }
 
+.item-pagination,
 .pagination_list {
     list-style:none;
     margin-left:0;
@@ -42,8 +43,28 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 }
 
+.item-pagination li,
 .pagination_list li {
-    display:inline;
+    display:inline-block;
+    margin:0;
+}
+
+.item-pagination li.next {
+    float:right;
+    text-align:right;
+}
+
+.item-pagination a {
+    display:block;
+    background: rgba(0,100,200,.9);
+    text-decoration:none;
+    color: white;
+    padding: 1rem;
+}
+
+.item-pagination a:hover,
+.item-pagination a:focus {
+    background: rgba(0,70,250,.825);
 }
 
 #sort-links ul {
