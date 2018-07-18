@@ -50,3 +50,8 @@ add_filter(
     array('Display','Item','Dublin Core', 'Contributor'),
     'filter_for_anonymity'
 );
+
+add_filter(
+    'item_citation',
+    'filter_item_citation'
+);
