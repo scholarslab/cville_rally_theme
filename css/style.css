@@ -10,7 +10,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
   text-align: center;
   font-size: 120%;
   padding: 10px 0;
-  margin: 20px;
+  margin: 0 0 20px;
   text-decoration:none;
 }
 
@@ -92,3 +92,53 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 .element h3 {
     margin-bottom:.375em !important;
 }
+
+#sidebar-area-top {
+    padding: 20px;
+}
+
+#browse-items-nav {
+    text-decoration:none;
+    font-size: 1.2em;
+    margin: 20px 0;
+    display:block;
+}
+#recent-items h2 {
+    font-size:1em;
+    margin-bottom: 10px;
+}
+
+
+#recent-items h3 {
+    font-size: 1em;
+}
+
+
+#recent-items a {
+    text-decoration:none;
+    display:block;
+}
+
+#recent-items a.image {
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,.625);
+    padding: 10px;
+}
+
+#recent-items img {
+    border: 1px solid #ccc;
+}
+
+#recent-items a:hover,
+#recent-items a:focus {
+    background-color: white;
+}
+
+#recent-items .item {
+    margin-bottom: 20px;
+}
+
+#recent-items .item-description {
+    display:none;
+}
+
