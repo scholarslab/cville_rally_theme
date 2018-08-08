@@ -111,9 +111,16 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
     margin: 20px 0;
     display:block;
 }
+
+#recent-items {
+    padding-top: 20px;
+}
+
 #recent-items h2 {
     font-size:1em;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 
