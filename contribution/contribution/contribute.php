@@ -56,7 +56,6 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
 		  <li>If you'd rather not use the individual uploader, you can contact us at <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a>. </li>
 		</ul>
 		<p>If you wish to donate physical materials or media, please <a href="mailto:digital_collecting@virginia.edu?subject=Donating%20physical%20materials%20to%20Rally%20collection">contact Special Collections</a> directly. To nominate <em>other people's online work</em> for capture, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWD06gQiZ35z_HB57sulIV_BRdfGakcTCzO9fVn4Sc8INRwQ/viewform">please use our URL capture form</a>.</p>
-
 		<p>Questions? Contact <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a>.&nbsp;</p>
 	</div>
 		<h2>Collection Form</h2>

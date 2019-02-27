@@ -1,17 +1,28 @@
-<!-- <aside id="sidebar" class="threecol last" role="complementary"> -->
-  
-  <!-- <div class="container">
-    <div id="sidebar-area-top">
-      <a href="<?php echo url('contribution'); ?>" id="contribution-button">Contribute Materials</a>
-        <a href="<?php echo url('items'); ?>" id="browse-items-nav">Browse the Collection</a>
-        <div id="recent-items">
-    
-</div>
-    </div>
 
-  </div> -->
-  <aside class="aside" role="complementary">
-  <?php if (!is_contribution_form()): ?>
+    
+<?php
+$bodyclass = 'page simple-page';
+if ($is_home_page):
+    $bodyclass .= ' simple-page-home';
+endif;
+echo head(array(
+    'title' => metadata('simple_pages_page', 'title'),
+    'bodyclass' => $bodyclass,
+    'bodyid' => metadata('simple_pages_page', 'slug')
+));
+?>
+<div id="primary">
+    <?php if (!$is_home_page): ?>
+    <p id="simple-pages-breadcrumbs"><?php echo simple_pages_display_breadcrumbs(); ?></p>
+    <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
+    <?php endif; ?>
+    <div class="flex-container">
+    <div class="main-content">
+    <?php
+    $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
+    echo $this->shortcodes($text);
+    ?>
+    </div>
     <div class="side-bar">
     <div class="content">
       <h3>Browse the Collection</h3>
@@ -76,5 +87,7 @@
       </div></a>
   </div>
 </div>
-    <?php endif; ?>
-</aside><!-- /#sidebar -->
+</div>
+
+
+<?php echo foot(); ?>z

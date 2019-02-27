@@ -11,10 +11,18 @@
 
   <?php echo auto_discovery_link_tags(); ?>
 
+<!-- Plugin Stuff -->
   <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
-<?php
+
+<!-- Stylesheets -->
+  <?php
+  queue_css_url('//fonts.googleapis.com/css?family=Libre-Franklin:400,500,700,400italic,700italic');
   queue_css_file('style');
   echo head_css();
+  ?>
+
+<!-- Javascripts -->
+  <?php
   echo head_js();
   ?>
 
@@ -33,47 +41,32 @@
 </script>
 <noscript><p><img src="//analytics.lib.virginia.edu/piwik.php?idsite=33" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
-
-
 </head>
+
 <?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar no-bg ' . @$bodyclass)); ?>
 
-<div id="wrap" role="document">
-     <div class="container top-container">
-      <div class="row top-row">
-        <nav class="eightcol" id="top-nav">
-          <h3 class="visuallyhidden">U.Va. Links</h3>
-          <ul>
-            <li><?php echo link_to_home_page('Home'); ?></li>
-            <li><a href="http://www.virginia.edu">U.Va. Home</a></li>
-            <li><a href="http://lib.virginia.edu">U.Va. Library</a></li>
-          </ul>
-        </nav>
-        <div class="sixcol last"></div>
-      </div>
-    </div>
-
-    <div class="container header-container"><div class="row header-row clearfix">
-      <header id="top-banner" class="twelvecol" role="banner">
-        <div class="container">
-          <h1 class="ninecol" id="main-title">
+  <header role="banner">
+    <div class="topnav" role="navigation">
+      <?php echo link_to_home_page('Digital Collecting'); ?>
+      <a style="float:right" href="https://www.library.virginia.edu/">
+        <img alt="UVa Library" src="<?php echo img('library-long-white.svg'); ?>" width="250" class="lib-long">
+        <img alt="UVa Library" src="<?php echo img('liblogo.png'); ?>" width="80" class="lib-short">
+      </a>
+    </div> 
+    <div id="site-title">
           <a href="<?php echo url('/'); ?>">
-            <span class="donor-title"><?php echo option('site_title'); ?></span>
-            <span class="library-title">
+            <!-- <span class="library-title"><?php echo option('site_title'); ?></span> -->
               <?php if($tagline = get_theme_option('Tagline Text')): ?>
                 <?php echo $tagline; ?>
               <?php endif;?>
             </span>
-        </a></h1>
-        <a class="threecol last" id="logo" href="http://lib.virginia.edu">
-            <img src="<?php echo img('liblogo.png'); ?>" width="198" height="90" alt="Test">
-        </a>
-      </div>
-    </header>
-  </div></div><!-- /.row /.container -->
-<div class="container content-container">
-  <div class="row content-row clearfix">
-      <div id="content" class="row">
-          <div id="main" class="ninecol" role="main">
-            <div class="container">
-                <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
+          </a>
+    </div>
+    <nav class="navigation" role="navigation">
+        <?php echo public_nav_main(); ?>
+    </nav>
+  </header>
+  
+  <div class="wrapper">
+  <main class="main-content" id="main" role="main">
+    <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

@@ -1,0 +1,41 @@
+// from takeback
+@mixin clearfix {
+    &:before,
+    &:after {
+      content: " ";
+      display:table;
+      width:100%;
+    }
+  }
+
+// from minimalist
+
+@mixin link-button {
+    min-height: 1.5 * $base-line-height;
+    padding: .25 * $spacing-unit;
+    display: block;
+    background-color: rgba($link-color, .05);
+    margin-bottom:.5em;
+    border: 0;
+    &:hover {
+        background-color:rgba($link-color, .125);
+        color:darken($base-color, 30%);
+        text-decoration: none;
+   }
+   &:active {
+        background-color:rgba($link-color, .125);
+   }
+}
+
+@mixin line-button {
+    &:before {
+        content: "\2014\0020";
+    }
+}
+
+@mixin calc($property, $expression) { 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+} 
+
+

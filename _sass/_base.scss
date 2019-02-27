@@ -1,14 +1,67 @@
 // ---------------------------------------------------------------------------
 // Imports
 
-@import "susy";
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
 
 // ---------------------------------------------------------------------------
 // Basic Grid
 
-$total-columns  : 12;
-$column-width   : 4em;
-$gutter-width   : 1em;
-$grid-padding   : $gutter-width;
+// $total-columns  : 12;
+// $column-width   : 4em;
+// $gutter-width   : 1em;
+// $grid-padding   : $gutter-width;
 
-$show-grid-backgrounds  : true;
+// $show-grid-backgrounds  : true;
+
+
+// Colors
+$primary-text-color             : #595959;
+$secondary-text-color           : #232d4b;
+$white-text-color               : #fff;
+
+$background-color-primary-nav   : #002f6c;
+$background-color-secondary     : #00224d;
+$background-color-white         : #fff;
+$background-color-sidebar       : #f5f5f5;
+
+$base-color                     : $secondary-text-color;
+$base-color-light               : lighten($base-color, 10%);
+$base-color-lighter             : lighten($base-color, 20%);
+$base-color-lightest            : lighten($base-color, 30%);
+$base-color-dark                : darken($base-color, 10%);
+$base-color-darker              : darken($base-color, 20%);
+$base-color-darkest             : darken($base-color, 30%);
+
+$link-color                     : $primary-text-color;
+$link-visited-color             : $link-color;
+$link-hover-color               : darken($link-color, 20%);
+$link-focus-color               : $link-hover-color;
+$link-active-color              : darken($link-color, 20%);
+
+
+// ---------------------------------------------------------------------------
+// Typography
+
+$font-family-main: 'Open Sans', sans-serif;
+// 'Roboto', sans-serif;
+// 'Open Sans', sans-serif;
+// 'Libre Franklin', Arial, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 24px;
+$font-family-title: 'Open Sans', sans-serif;
+// 'Libre Franklin',arial,sans-serif;
+
+$spacing-unit: $base-line-height;
+
+$default-font: 'Open Sans', sans-serif;
+// 'Roboto', sans-serif;
+// 'Libre Franklin',arial,sans-serif;
+
+$font-weight-main: 400;
+$font-weight-medium: 500;
+$font-weight-demi: 700;
