@@ -3,13 +3,13 @@ Table of Contents
 =================
 -- General Styles
 -- Header
+---- Top Nav Bar
+---- Primary Nav Bar
 -- Footer
--- Navigation
------ Top Nav Bar
------ Primary Nav Bar
------ Pagination
+-- Pagination
 -- Content
 ---- Browse and Item Pages
+---- Simple Pages
 ---- Contributed Items
 -- Misc
 */
@@ -63,7 +63,7 @@ body,
     @include order(1);
 }
 .main-content {
-  padding: 1rem;
+    padding: 1rem;
     @include flexbox();
     @include flex-direction(column);
     @include order(1);
@@ -71,8 +71,22 @@ body,
 }
 .side-bar {
   @include flexbox();
+  @include align-self(center);
   @include order(2);
   @include flex(1);
+  padding: 1rem;
+  margin: 1rem;
+  float: center;
+  display: block;
+  border: hidden;
+  background-color: $background-color-white;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+  color: $primary-text-color;
+  
+  & h3 {
+    padding-bottom: .5rem;
+    padding-top: .75rem;
+  }
 }
 
 @media all and (min-width: 600px) {
@@ -101,8 +115,8 @@ body,
 // }
 
 ul, ol {
-  list-style: square outside none;
-  margin: 1em 0;
+  list-style: disc outside none;
+  // margin: 1em 0;
   padding: 0 0 0 30px;
 }
 ul ul, ol ul {
@@ -147,11 +161,10 @@ a {
   font-size: $base-font-size * 2;
   color: $secondary-text-color;
   margin-bottom: 2rem;
-  clear: both;
 }
 #main h2 {
   font-size: $base-font-size * 1.5;
-  margin: 1.23em 0 0.67em;
+  margin: 1em 0 0.67em;
   color: $base-color;
 }
 #main h3 { 
@@ -166,11 +179,11 @@ a {
 #main h4 { 
   color: $base-color; 
   font-family: $default-font; 
-  font-size: 14px; 
-  font-size: 1.4rem; 
+  font-size: $base-font-size * 1.2; 
   font-weight: $font-weight-demi; 
-  margin: 0.67em 0 0.5em;
-  text-decoration: underline;
+  margin: 0.67em;
+  text-transform: uppercase;
+  // text-decoration: underline;
 }
 #main p, #main ul, #main li  { 
   margin-bottom: 1em;
@@ -215,10 +228,10 @@ a {
 
 .aside {
   background: $background-color-sidebar;
-  padding: 2.5rem;
+  padding: 2rem;
   margin: 1.5rem -1.5rem -1.5rem;
   @include flexbox();
-  @include flex-direction(column);
+  // @include flex-direction(column);
 }
 
 div.icons {
@@ -306,34 +319,19 @@ header {
   }
 }
 
-/* -------------------------------------------------------------------------*/
-/* !---------- Footer ---------- */
-.footer {
-  text-align: center;
+#admin-bar {
   background-color: $background-color-secondary;
-  color: #e0e0e0;
-  color: rgba(255,255,255,.75);
-  padding: 1rem;
-}
-#footer-text {
-  color: $white-text-color;
+  padding:0;
 }
 
-#bottom-nav {
-  display: inline-block;
-  font-size: .9rem;
-  a,
-  a:link
-  a:visited {
-    color: #e0e0e0;
-    color: rgba(255,255,255,.75);
-  }
-  a:hover,
-  a:focus {
-    color: #fff;
-  }
+.admin-login {
+  float: right;
+  padding: 0;
+  margin-top: -0.6rem;
+  margin-bottom: -0.6rem;
+  
 }
-/* -------------------------------------------------------------------------*/
+
 /* !---------- Top Nav Bar ---------- */
 .topnav {
   overflow: hidden;
@@ -371,7 +369,6 @@ header {
   }
 }
 
-/* -------------------------------------------------------------------------*/
 /* !---------- Primary Nav Bar ---------- */
 .navigation {
   list-style: none;
@@ -413,6 +410,34 @@ header {
   }
   .navigation li:last-of-type a {
     border-bottom: none;
+  }
+}
+
+/* -------------------------------------------------------------------------*/
+/* !---------- Footer ---------- */
+.footer {
+  text-align: center;
+  background-color: $background-color-secondary;
+  color: #e0e0e0;
+  color: rgba(255,255,255,.75);
+  padding: 1rem;
+}
+#footer-text {
+  color: $white-text-color;
+}
+
+#bottom-nav {
+  display: inline-block;
+  font-size: .9rem;
+  a,
+  a:link
+  a:visited {
+    color: #e0e0e0;
+    color: rgba(255,255,255,.75);
+  }
+  a:hover,
+  a:focus {
+    color: #fff;
   }
 }
 
@@ -532,57 +557,22 @@ header {
     }
 }
 
+//Simple Pages
+#homepage-text,
+#home article div.side-bar,
+.items #primary,
+.browse #primary,
 .contribution #primary,
 .simple-page #primary {
-  max-width: 900px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.simple-pages-navigation ul {
-  margin:0;
-  padding:0;
-}
-
-.simple-pages-navigation li {
-  display:block;
-  border-bottom:1px solid rgba(0,0,0,0.125);
-}
-
-.simple-pages-navigation li:before {
-  content: "";
-  display:none;
-}
-
-.simple-pages-navigation a {
-  text-decoration:none;
-  font-weight:bold;
-  display:block;
-  line-height:3em;
-  padding: 0 1em;
-}
-
-.simple-pages-navigation a:hover,
-.simple-pages-navigation a:focus,
-.simple-pages-navigation a:active {
-  background: rgba(0,0,0,.0375);
-}
-
-.simple-pages-navigation .active a {
-  color: #333;
 }
 
 .simple-page .page-text {
   float:left;
   width: 65%;
 }
-
-.simple-page #simple-pages-navigation {
-  float:right;
-  width: 30%;
-  margin-top:1em;
-}
-
 
 .simple-page #primary {
   overflow:hidden;

@@ -2,7 +2,7 @@
 $title = metadata('item', 'display_title');
 echo head(array('title' => $title, 'bodyclass' => 'items show'));
 ?>
-
+<div id="primary">
 <h1><?php echo metadata('item', 'display_title'); ?></h1>
 
 <?php echo all_element_texts('item'); ?>
@@ -50,4 +50,5 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
 </ul>
 </nav>
 
+</div>
 <?php echo foot(); ?>

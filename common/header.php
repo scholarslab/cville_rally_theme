@@ -45,6 +45,8 @@
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar no-bg ' . @$bodyclass)); ?>
 
+<?php echo common('admin-bar'); ?>
+
   <header role="banner">
     <div class="topnav" role="navigation">
       <?php echo link_to_home_page('Digital Collecting'); ?>

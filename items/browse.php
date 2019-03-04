@@ -2,7 +2,7 @@
 $pageTitle = __('Browse Items');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
-
+<div id="primary">
 <h1><?php echo $pageTitle;?></h1>
 
 <?php if ($total_results > 0): ?>
@@ -73,4 +73,5 @@ $sortLinks[__('Date Added')] = 'added';
 
 <?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
 
+</div>
 <?php echo foot(); ?>

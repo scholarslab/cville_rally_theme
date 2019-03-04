@@ -1,15 +1,3 @@
-// from takeback
-@mixin clearfix {
-    &:before,
-    &:after {
-      content: " ";
-      display:table;
-      width:100%;
-    }
-  }
-
-// from minimalist
-
 @mixin link-button {
     min-height: 1.5 * $base-line-height;
     padding: .25 * $spacing-unit;

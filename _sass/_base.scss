@@ -1,24 +1,12 @@
 // ---------------------------------------------------------------------------
 // Imports
 
-@import "normalize";
+// @import "normalize";
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-
-
 // ---------------------------------------------------------------------------
-// Basic Grid
-
-// $total-columns  : 12;
-// $column-width   : 4em;
-// $gutter-width   : 1em;
-// $grid-padding   : $gutter-width;
-
-// $show-grid-backgrounds  : true;
-
-
 // Colors
 $primary-text-color             : #595959;
 $secondary-text-color           : #232d4b;
@@ -48,9 +36,6 @@ $link-active-color              : darken($link-color, 20%);
 // Typography
 
 $font-family-main: 'Open Sans', sans-serif;
-// 'Roboto', sans-serif;
-// 'Open Sans', sans-serif;
-// 'Libre Franklin', Arial, sans-serif;
 $base-font-size: 16px;
 $base-line-height: 24px;
 $font-family-title: 'Open Sans', sans-serif;
@@ -58,7 +43,7 @@ $font-family-title: 'Open Sans', sans-serif;
 
 $spacing-unit: $base-line-height;
 
-$default-font: 'Open Sans', sans-serif;
+$default-font: $font-family-main;
 // 'Roboto', sans-serif;
 // 'Libre Franklin',arial,sans-serif;
 
