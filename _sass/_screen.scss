@@ -159,17 +159,17 @@ a {
 }
 #main h1 {
   font-size: $base-font-size * 2;
-  color: $secondary-text-color;
+  // color: $secondary-text-color;
   margin-bottom: 2rem;
 }
 #main h2 {
   font-size: $base-font-size * 1.5;
   margin: 1em 0 0.67em;
-  color: $base-color;
+  // color: $base-color;
 }
 #main h3 { 
   font-family: $font-family-title;
-  color: $base-color; 
+  // color: $base-color; 
   font-weight: $font-weight-demi;
   font-size: 1.25rem; 
   margin: 1em 0 0.67em; 
@@ -177,7 +177,7 @@ a {
   -webkit-margin-before: 0;
 }
 #main h4 { 
-  color: $base-color; 
+  // color: $base-color; 
   font-family: $default-font; 
   font-size: $base-font-size * 1.2; 
   font-weight: $font-weight-demi; 
@@ -243,7 +243,7 @@ div.icons {
   a {
     text-align: center;
     text-decoration: none;
-    color: $secondary-text-color;
+    // color: $secondary-text-color;
     font-weight: $font-weight-demi;
     font-size: 1rem;
     &:hover,
@@ -259,9 +259,9 @@ div.icons svg {
   path {
     fill: $primary-text-color;
   }
-  &:hover path {
-    fill: $secondary-text-color;
-  }
+  // &:hover path {
+  //   fill: $secondary-text-color;
+  // }
 }
 
 /* -------------------------------------------------------------------------*/
@@ -271,56 +271,56 @@ header {
 }
 
 #site-title {
-    background-color: $background-color-primary-nav;
+    // background-color: $background-color-primary-nav;
     margin: 0; 
     padding: 1.5rem;
     overflow: hidden;
-    color: $white-text-color;
+    // color: $white-text-color;
     font-size: $base-font-size * 2;
     line-height: $base-line-height * 1.5;
     font-family: 'Libre Franklin',arial,sans-serif;
     font-weight: 800;
     text-overflow: inherit;
     & a {
-      color: $white-text-color;
+      // color: $white-text-color;
       text-decoration: none;
     }
     & a:visited {
-      color: $white-text-color;
+      // color: $white-text-color;
       text-decoration: none;
     }
 }
 
 #introduction { //homepage content
     min-height: 40vh;
-    background-image: linear-gradient(rgba(0,61,138, 0.6), rgba(0,61,138, 0.8)), url(http://digitalcollecting.lib.virginia.edu/rally/files/original/077879177ac57aa98ddfc45ddb2dffad.jpeg);
+    // background-image: linear-gradient(rgba(0,61,138, 0.6), rgba(0,61,138, 0.8));
     background-size: cover;
-    background-position: 0 0, 50% 50%;
+    background-position: center top;
     margin: -1.5rem -1.5rem 1.5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
   }
 
-#introduction h2 {
+#introduction p {
   margin: 0;
-  max-width: 60vw;
+  // max-width: 60vw;
   float: right;
   font-size: 1.2rem;
   font-weight: $font-weight-medium;
-  color: $white-text-color;
+  // color: $white-text-color;
   text-align: left;
-  padding: 3rem;
+  padding: 4rem;
+  padding-left: 40%;
+  min-height: 40vh;
+  background-size: cover;
 }
 @media all and (max-width: 650px) {
-  #introduction h2 {
-    max-width: 100vw;
+  #introduction p {
+    // max-width: 100vw;
+    padding-left: 4rem;
   }
 }
 
 #admin-bar {
-  background-color: $background-color-secondary;
+  // background-color: $background-color-secondary;
   padding:0;
 }
 
@@ -335,12 +335,12 @@ header {
 /* !---------- Top Nav Bar ---------- */
 .topnav {
   overflow: hidden;
-  background-color: $background-color-primary-nav;
+  // background-color: $background-color-primary-nav;
 
   a {
     float: left;
     display: block;
-    color: $white-text-color;
+    // color: $white-text-color;
     padding: 1rem;
     text-decoration: none;
     font-family: $default-font;
@@ -354,17 +354,17 @@ header {
   }
 }
 
-.lib-short {
+.logo-short {
   display: none;
 }
 @media all and (max-width: 600px) {
   // img {
   //   width: 50px;
   // }
-  .lib-long {
+  .logo-long {
     display: none;
   }
-  .lib-short {
+  .logo-short {
     display: block;
   }
 }
@@ -376,14 +376,13 @@ header {
   padding: 0;
   padding-top: .25rem;
   padding-bottom: .25rem;
-  overflow: hidden;
-  background: $background-color-secondary;
+  // background: $background-color-secondary;
   @include flexbox();
   @include flex-flow(row wrap);
   @include justify-content(flex-start);
 
   & a {
-    color: $white-text-color;
+    // color: $white-text-color;
     line-height: $base-line-height * 1.5;
     font-weight: $font-weight-medium;
     padding: 1.5rem;
@@ -417,28 +416,28 @@ header {
 /* !---------- Footer ---------- */
 .footer {
   text-align: center;
-  background-color: $background-color-secondary;
-  color: #e0e0e0;
-  color: rgba(255,255,255,.75);
+  // background-color: $background-color-secondary;
+  // color: #e0e0e0;
+  // color: rgba(255,255,255,.75);
   padding: 1rem;
 }
-#footer-text {
-  color: $white-text-color;
-}
+// #footer-text {
+//   color: $white-text-color;
+// }
 
 #bottom-nav {
   display: inline-block;
   font-size: .9rem;
-  a,
-  a:link
-  a:visited {
-    color: #e0e0e0;
-    color: rgba(255,255,255,.75);
-  }
-  a:hover,
-  a:focus {
-    color: #fff;
-  }
+  // a,
+  // a:link
+  // a:visited {
+  //   color: #e0e0e0;
+  //   color: rgba(255,255,255,.75);
+  // }
+  // a:hover,
+  // a:focus {
+  //   color: #fff;
+  // }
 }
 
 /* -------------------------------------------------------------------------*/
@@ -547,12 +546,12 @@ header {
 }
 
 .item h2 a {
-  color: rgba($secondary-text-color, .9);
+  // color: rgba($secondary-text-color, .9);
   font-size: $base-font-size * 1.5;
 
   &:hover,
     &:focus {
-      color: $secondary-text-color;
+      // color: $secondary-text-color;
       text-decoration: underline;
     }
 }

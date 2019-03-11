@@ -16,30 +16,78 @@
 
 <!-- Stylesheets -->
   <?php
-  queue_css_url('//fonts.googleapis.com/css?family=Libre-Franklin:400,500,700,400italic,700italic');
   queue_css_file('style');
   echo head_css();
+  echo theme_header_background();
   ?>
 
+  <?php
+      ($backgroundColor = get_theme_option('background_color')) || ($backgroundColor = "#002f6c");
+      ($textColor = get_theme_option('text_color')) || ($textColor = "#FFFFFF");
+      ($navbackgroundColor = get_theme_option('navbackground_color')) || ($navbackgroundColor = "#00224d");
+      ($navtextColor = get_theme_option('navtext_color')) || ($navtextColor = "#FFFFFF");
+      ($htextColor = get_theme_option('htext_color')) || ($htextColor = "#232d4b");
+  ?>
+
+  <style>
+    #site-title, .topnav {
+      background-color: <?php echo $backgroundColor; ?>;
+    }
+    #site-title a:link, #site-title a:visited,
+    #site-title a:active, #site-title a:hover,
+    .topnav a:link, .topnav a:visited {
+      color: <?php echo $textColor; ?>;
+    }
+    .navigation, .footer, #admin-bar {
+      background: <?php echo $navbackgroundColor; ?>;
+    }
+    .navigation a:link, .navigation a:visited,
+    .navigation a:active, .navigation a:hover {
+      color: <?php echo $navtextColor; ?>;
+    }
+    .admin-login a:link, .admin-login a:visited,
+    #bottom-nav a:link, #bottom-nav a:visited {
+      color: <?php echo adjustBrightness($navtextColor, -40); ?>;
+    }
+    .admin-login a:active, .admin-login a:hover,
+    #bottom-nav a:active, #bottom-nav a:hover,
+    #footer-text {
+      color: <?php echo $navtextColor; ?>;
+    }
+    #main h1, #main h2, #main h3, #main h4,
+    .item h2 a:link, .item h2 a:visited,
+    .item h2 a:hover, .item h2 a:focus, div.icons a:link {
+      color: <?php echo $htextColor; ?>;
+    }
+    div.icons svg:hover path {
+      fill: <?php echo $htextColor; ?>;
+    }
+    #introduction p {
+      background-image: linear-gradient(<?php echo hex2rgba($backgroundColor, 0.6); ?>, <?php echo hex2rgba($backgroundColor, 0.8); ?>);
+      color: <?php echo $textColor; ?>;
+            <?php if (get_theme_option('header_background')): ?>
+            text-shadow: 0px 0px 20px #000;
+            <?php endif; ?>
+    }
+  </style>
 <!-- Javascripts -->
   <?php
   echo head_js();
   ?>
-
 <!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.lib.virginia.edu/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 33]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//analytics.lib.virginia.edu/piwik.php?idsite=33" style="border:0;" alt="" /></p></noscript>
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.lib.virginia.edu/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 33]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//analytics.lib.virginia.edu/piwik.php?idsite=33" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 </head>
 
@@ -49,19 +97,21 @@
 
   <header role="banner">
     <div class="topnav" role="navigation">
-      <?php echo link_to_home_page('Digital Collecting'); ?>
-      <a style="float:right" href="https://www.library.virginia.edu/">
-        <img alt="UVa Library" src="<?php echo img('library-long-white.svg'); ?>" width="250" class="lib-long">
-        <img alt="UVa Library" src="<?php echo img('liblogo.png'); ?>" width="80" class="lib-short">
-      </a>
+      <?php echo link_to_home_page(option('site_title')); ?>
+      <a style="float:right" href="<?php echo get_theme_option('logo_url'); ?>">
+              <?php if($logo = cville_theme_logo()): ?>
+                <?php echo $logo; ?>
+              <?php endif;?>
+              <?php if($logosm = cville_theme_logo_sm()): ?>
+                <?php echo $logosm; ?>
+              <?php endif;?>
+          </a>
     </div> 
     <div id="site-title">
           <a href="<?php echo url('/'); ?>">
-            <!-- <span class="library-title"><?php echo option('site_title'); ?></span> -->
               <?php if($tagline = get_theme_option('Tagline Text')): ?>
                 <?php echo $tagline; ?>
               <?php endif;?>
-            </span>
           </a>
     </div>
     <nav class="navigation" role="navigation">

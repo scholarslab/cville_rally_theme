@@ -1,22 +1,4 @@
-<!-- <aside id="sidebar" class="threecol last" role="complementary"> -->
-  
-  <!-- <div class="container">
-    <div id="sidebar-area-top">
-      <a href="<?php echo url('contribution'); ?>" id="contribution-button">Contribute Materials</a>
-        <a href="<?php echo url('items'); ?>" id="browse-items-nav">Browse the Collection</a>
-        <div id="recent-items">
-    
-</div>
-    </div>
-
-  </div> -->
-  <!-- <aside class="aside" role="complementary">
-  <?php if (!is_contribution_form()): ?> -->
-
-  <!-- <div class="side-bar">
-    <div class="content"> -->
-  
-      <h4>Browse the Collection</h4>
+  <h4>Browse the Collection</h4>
       <div class="icons">
         <a href="<?php echo url('/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=&advanced%5B0%5D%5Btype%5D=&advanced%5B0%5D%5Bterms%5D=&type=6&collection=&submit_search=Search+for+items'); ?>">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -76,8 +58,4 @@
           </svg>
         <div class="text">Links</div>
       </div></a>
-  <!-- </div> -->
-<!-- </div>
-    <?php endif; ?>
-</aside> -->
-<!-- /#sidebar -->
+

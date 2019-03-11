@@ -1,10 +1,15 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<div id="introduction">
-      <h2>The events of August 11 & 12, 2017 saw loss of life, physical violence, and community turmoil significant enough to merit international media coverage in Charlottesville. Our community will be recovering, assessing, and attempting to move forward for a long time to come.</h2>
-</div>
+
+<header id="introduction" role="heading">
+    <p><?php if ($homepageText = get_theme_option('Homepage Text')): ?>
+    <?php echo $homepageText; ?>
+    <?php endif; ?></p>
+      <!-- <h2>The events of August 11 & 12, 2017 saw loss of life, physical violence, and community turmoil significant enough to merit international media coverage in Charlottesville. Our community will be recovering, assessing, and attempting to move forward for a long time to come.</h2> -->
+    </header>
 
   <div id="homepage-text" class="flex-container">
+  
     <div class="flex-item">
       <div class="content">
         <h3>Building the Archive</h3>
@@ -41,12 +46,6 @@
     <?php echo common('aside'); ?>
   </div>
 </article>
-
-<!-- <div id="primary">
-    <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
-    <?php echo $homepageText; ?>
-    <?php endif; ?>
-</div> -->
 
 <?php fire_plugin_hook('public_home', array('view' => $this)); ?>
 
