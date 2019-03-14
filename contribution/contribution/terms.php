@@ -17,8 +17,9 @@ echo head($head);
         <ul>
             <li>You must be at least 18 years old.</li>
             <li>Submitted material must be owned and/or created by you.</li>
-            <li>All submissions will be available to Library-approved researchers and can be used for teaching and research purposes.</li>
-            <li>Under conditions of a lawful subpoena or court order, we may be required to turn over any submissions and related information (email address, descriptive information, etc.).</li>
+            <li>You have the option of making your contribution public or private. If public, your content may be published as part of the Library’s digital collections; Private submissions will only be available to Library-approved researchers.</li>
+            <li>All submissions will be available to Library-approved researchers and can be used by the Library from now on in support of its teaching and research mission.</li>
+            <li>Your submission must not violate any laws. If we receive a lawful subpoena or court order, we may be required to turn over any submissions and related information (email address, descriptive information, etc.).</li>
         </ul>
     </div>
 </div>
