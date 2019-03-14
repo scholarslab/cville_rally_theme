@@ -13,7 +13,7 @@ echo head($head);
 
     </div>
     <div class="side-bar">
-        <h4>Summary of Terms</h4>
+        <h4>Summary of Terms*</h4>
         <ul>
             <li>You must be at least 18 years old.</li>
             <li>Submitted material must be owned and/or created by you.</li>
@@ -21,6 +21,8 @@ echo head($head);
             <li>All submissions will be available to Library-approved researchers and can be used by the Library from now on in support of its teaching and research mission.</li>
             <li>Your submission must not violate any laws. If we receive a lawful subpoena or court order, we may be required to turn over any submissions and related information (email address, descriptive information, etc.).</li>
         </ul>
+        <p style="font-size:0.9rem;margin:0.67em">*This summary is to help you read and understand the terms, but does not replace them. Your submission is governed by the full terms of use.</p>
+
     </div>
 </div>
 
