@@ -140,3 +140,4 @@ function custom_paging()
         echo '<li id="next-item" class="next">'.link_to_next_item_show().'</li>';
     }
 }
+

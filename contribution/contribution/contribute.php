@@ -48,7 +48,7 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
         <div class="main-content">
             <p>The form below is for submission of <em><strong>your personal digital documentation</strong></em> related to the events around August 11 & 12, 2017 in Charlottesville, VA.</p>
             <p><strong><?php echo __("Before contributing materials, please read the full %s",  "<a href='" . contribution_contribute_url('terms') . "' target='_blank'>" . __('Terms and Conditions') . ".</a>"); ?></strong></p>
-            <h4>Notes:</h4>
+            <h2>NOTES:</h2>
             <ul>
                 <li>Individual file size limit is 250Mb.</li>
                 <li>If your file is too large to upload, or if you have a large number of items to contribute, please select the "Link" type in the below Collection Form to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).</li>
@@ -56,7 +56,7 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
             </ul>
         </div>
         <div class="side-bar">
-           <h4>Questions or concerns?</h4> 
+           <h3>QUESTIONS OR CONCERNS?</h3> 
             <ul style="list-style-type:circle;">
             <li>Please contact us at <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a>.</li>
                 <li>If you wish to donate physical materials or media, please <a href="mailto:digital_collecting@virginia.edu?subject=Donating%20physical%20materials%20to%20Rally%20collection">contact Special Collections</a> directly.</li>
