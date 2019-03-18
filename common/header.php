@@ -18,8 +18,11 @@
   <?php
   queue_css_file('style');
   echo head_css();
-  echo theme_header_background();
   ?>
+
+  <?php if ($headerBackground = theme_header_background()): ?>
+  <?php echo $headerBackground; ?>
+  <?php endif; ?>
 
   <?php
       ($backgroundColor = get_theme_option('background_color')) || ($backgroundColor = "#002f6c");
@@ -69,6 +72,23 @@
             text-shadow: 0px 0px 20px #000;
             <?php endif; ?>
     }
+    .logo-short {
+      <?php if (get_theme_option('logosm')): ?>
+      display: none;
+      <?php endif; ?>
+    }
+    @media all and (max-width: 600px) {
+      .logo-long {
+        <?php if (get_theme_option('logosm')): ?>
+        display: none;
+                <?php endif; ?>
+      }
+      .logo-short {
+        <?php if (get_theme_option('logosm')): ?>
+         display: block;
+                <?php endif; ?>
+      }
+    }
   </style>
 <!-- Javascripts -->
   <?php
@@ -92,20 +112,32 @@
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar no-bg ' . @$bodyclass)); ?>
-
-<?php echo common('admin-bar'); ?>
+  <a href="#main" id="skipnav"><?php echo __('Skip to main content'); ?></a>
+  <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
   <header role="banner">
+    <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
     <div class="topnav" role="navigation">
       <?php echo link_to_home_page(option('site_title')); ?>
-      <a style="float:right" href="<?php echo get_theme_option('logo_url'); ?>">
-              <?php if($logo = cville_theme_logo()): ?>
+      <span style="float:right">
+      <?php if ($logo = cville_theme_logo() && $logoUrl = get_theme_option('logo_url')): ?> 
+        <a  href="<?php echo $logoUrl; ?>">
+        <?php if($logo = cville_theme_logo()): ?>
                 <?php echo $logo; ?>
               <?php endif;?>
               <?php if($logosm = cville_theme_logo_sm()): ?>
                 <?php echo $logosm; ?>
               <?php endif;?>
-          </a>
+        </a>
+        <?php else: ?>
+        <?php if($logo = cville_theme_logo()): ?>
+                <?php echo $logo; ?>
+              <?php endif;?>
+              <?php if($logosm = cville_theme_logo_sm()): ?>
+                <?php echo $logosm; ?>
+              <?php endif;?>
+        <?php endif;?>
+      </span>
     </div> 
     <div id="site-title">
           <a href="<?php echo url('/'); ?>">

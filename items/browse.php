@@ -24,7 +24,7 @@ $sortLinks[__('Date Added')] = 'added';
 <div class="items browse">
 <?php foreach (loop('items') as $item): ?>
 <div class="item hentry">
-    <h2><?php  
+    <?php  
     if(isset($_SERVER['QUERY_STRING']) && !empty($_SERVER['QUERY_STRING'])) {
         $searchlink = record_url('item').'?' . $_SERVER['QUERY_STRING'];
         echo '<h2><a href="'.$searchlink.'">'. metadata('item', array('Dublin Core','Title')).'</a></h2>';
@@ -32,7 +32,7 @@ $sortLinks[__('Date Added')] = 'added';
     else{
         echo '<h2>'.link_to_item(metadata('item', array('Dublin Core','Title')), array('class'=>'permalink')).'</h2>';
     }
-    ?></h2>
+    ?>
     <div class="item-meta">
     <?php if (metadata('item', 'has files')): ?>
     <div class="item-img">

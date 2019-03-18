@@ -26,10 +26,8 @@ echo head(array(
       ?>
     </div>
     
-    <div class="side-bar">
-    <?php echo common('aside'); ?>
-    </div>
-
+  <?php echo common('aside'); ?>
+    
 </div>
 
 <?php echo foot(); ?>

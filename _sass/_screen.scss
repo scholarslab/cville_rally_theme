@@ -67,7 +67,7 @@ body,
     @include flexbox();
     @include flex-direction(column);
     @include order(1);
-    @include flex(2);
+    @include flex(1.75);
 }
 .side-bar {
   @include flexbox();
@@ -102,17 +102,6 @@ body,
     @include flex-flow(column wrap);
   }
 }
-
-// @media all and (min-width: 600px) {
-//     .aside { flex: 1 0 0; }
-// }
-  
-// @media all and (min-width: 800px) {
-//     .main    { flex: 2 0px; }
-//     .main    { order: 1; }
-//     .aside   { order: 2; }
-//     .footer  { order: 3; }
-// }
 
 ul, ol {
   list-style: disc outside none;
@@ -335,13 +324,13 @@ header {
 /* !---------- Top Nav Bar ---------- */
 .topnav {
   overflow: hidden;
+  display: block;
+  padding: 1rem;
   // background-color: $background-color-primary-nav;
 
   a {
     float: left;
-    display: block;
     // color: $white-text-color;
-    padding: 1rem;
     text-decoration: none;
     font-family: $default-font;
     text-transform: uppercase;
@@ -349,25 +338,40 @@ header {
   a:hover {
     text-decoration: underline;
   }
-  img {
-    border: 0;
-  }
+}
+#skipnav {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
-.logo-short {
-  display: none;
+#skipnav:focus {
+  top:0;
+  z-index:9999;
+  clip:initial;
+  height:auto;
+  width:auto;
+  padding:.5em;
+  border:1px blue dashed;
 }
-@media all and (max-width: 600px) {
-  // img {
-  //   width: 50px;
-  // }
-  .logo-long {
-    display: none;
-  }
-  .logo-short {
-    display: block;
-  }
-}
+
+// .logo-short {
+//   display: none;
+// }
+// @media all and (max-width: 600px) {
+
+//   .logo-long {
+//     display: none;
+//   }
+//   .logo-short {
+//     display: block;
+//   }
+// }
 
 /* !---------- Primary Nav Bar ---------- */
 .navigation {

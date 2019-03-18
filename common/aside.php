@@ -1,7 +1,8 @@
+<div class="side-bar">
   <h4>Browse the Collection</h4>
       <div class="icons">
         <a href="<?php echo url('/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=&advanced%5B0%5D%5Btype%5D=&advanced%5B0%5D%5Bterms%5D=&type=6&collection=&submit_search=Search+for+items'); ?>">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" id="photo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
           <path class="st0" d="M162.5,153v5.25c0,8.7-7.05,15.75-15.75,15.75h-126C12.05,174,5,166.95,5,158.25v-84
             c0-8.7,7.05-15.75,15.75-15.75H26v15.75h-3.28c-1.09,0-1.97,0.88-1.97,1.97v80.06c0,1.09,0.88,1.97,1.97,1.97h122.06
@@ -15,7 +16,7 @@
       </div></a>
       <div class="icons">
         <a href="<?php echo url('/items/browse?search=&advanced%5B0%5D%5Bjoiner%5D=and&advanced%5B0%5D%5Belement_id%5D=&advanced%5B0%5D%5Btype%5D=&advanced%5B0%5D%5Bterms%5D=&range=&collection=&type=3&user=&tags=&public=&featured=&submit_search=Search+for+items'); ?>">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" id="video-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
           <path class="st0" d="M158.04,26H40.96C32.15,26,25,33.15,25,41.96v117.07c0,8.82,7.15,15.96,15.96,15.96h117.07
             c8.82,0,15.96-7.15,15.96-15.96V41.96C174,33.15,166.85,26,158.04,26z M133.42,106.34l-49.76,29.4c-4.48,2.66-10.23-0.54-10.23-5.84
@@ -25,7 +26,7 @@
       </div></a>
       <div class="icons">
         <a href="<?php echo url('/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=&advanced%5B0%5D%5Btype%5D=&advanced%5B0%5D%5Bterms%5D=&type=1&collection=&submit_search=Search+for+items'); ?>">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" id="story-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
           <g>
             <path class="st0" d="M71.55,147.03c12.72,0,23.02-10.3,23.02-23.02S84.27,101,71.55,101s-23.02,10.3-23.02,23.02
@@ -49,7 +50,7 @@
       </div></a>
       <div class="icons">
         <a href="<?php echo url('/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=&advanced%5B0%5D%5Btype%5D=&advanced%5B0%5D%5Bterms%5D=&type=11&collection=&submit_search=Search+for+items'); ?>">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" id="link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
           <path class="st0" d="M185.93,140.07L166,128.18V32.27c0-7.92-6.42-14.34-14.34-14.34H27.34C19.42,17.93,13,24.35,13,32.27v105.19
             c0,7.92,6.42,14.34,14.34,14.34h104.69l7.47,27.89c0.71,2.63,4.29,3.33,5.7,0.8l10.62-19l14.82,19.44c1.07,1.37,3.02,1.68,4.39,0.59
@@ -58,4 +59,4 @@
           </svg>
         <div class="text">Links</div>
       </div></a>
-
+</div>

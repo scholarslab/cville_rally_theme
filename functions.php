@@ -208,7 +208,7 @@ function cville_theme_logo()
     if ($logo) {
         $storage = Zend_Registry::get('storage');
         $uri = $storage->getUri($storage->getPathByType($logo, 'theme_uploads'));
-        return '<img src="' . $uri . '" alt="' . option('site_title') . '" width="250" class="logo-long"/>';
+        return '<img src="' . $uri . '" alt="' . get_theme_option('logo_alt') . '" width="250" class="logo-long"/>';
     }
 
 }
@@ -218,6 +218,8 @@ $logosm = get_theme_option('Logosm');
 if ($logosm) {
     $storage = Zend_Registry::get('storage');
     $uri = $storage->getUri($storage->getPathByType($logosm, 'theme_uploads'));
-    return '<img src="' . $uri . '" alt="' . option('site_title') . '" width="80" class="logo-short"/>';
+    return '<img src="' . $uri . '" alt="' . get_theme_option('logo_alt') . '" width="80" class="logo-short"/>';
 }
+
+
 }
