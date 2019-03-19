@@ -1,9 +1,9 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<?php if ($headerBackground = theme_header_background() || $homepageText = get_theme_option('Homepage Text')): ?>
+<?php if ($headerBackground = theme_header_background() || $introText = get_theme_option('intro_text')): ?>
 <header id="introduction" role="heading">
-    <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
-    <p><?php echo $homepageText; ?></p>
+    <?php if ($introText = get_theme_option('intro_text')): ?>
+    <p><?php echo $introText; ?></p>
     <?php endif; ?>
     </header>
     <?php endif; ?>
