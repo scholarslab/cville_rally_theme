@@ -904,12 +904,12 @@ header {
 .item-pagination a {
   display: block;
   text-decoration: none;
-  background: rgba(73, 73, 73, 0.05);
+  background: #efefef;
   padding: .25em .75em;
   margin-right: 2rem;
 }
 .item-pagination a:hover, .item-pagination a:focus {
-  background: rgba(73, 73, 73, 0.125);
+  background: #c9c9c9;
 }
 
 .item-pagination li.next {
@@ -952,17 +952,17 @@ header {
   display: inline;
 }
 .pagination_list li.pagination_current {
-  background: rgba(73, 73, 73, 0.375);
+  background: #c9c9c9;
   color: rgba(0, 0, 0, 0.8);
   padding: .25em .75em;
 }
 .pagination_list a {
   text-decoration: none;
-  background: rgba(73, 73, 73, 0.05);
+  background: #efefef;
   padding: .25em .75em;
 }
 .pagination_list a:hover, .pagination_list a:focus {
-  background: rgba(73, 73, 73, 0.125);
+  background: #c9c9c9;
 }
 
 /* -------------------------------------------------------------------------*/

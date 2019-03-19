@@ -460,12 +460,12 @@ header {
 .item-pagination a {
   display: block;
   text-decoration: none;
-  background: rgba($link-color, .05);
+  background: lighten($link-color, 65%); //rgba($link-color, .05)
   padding: .25em .75em;
   margin-right: 2rem;
     &:hover,
     &:focus {
-      background: rgba($link-color, .125);
+      background: lighten($link-color, 50%); //rgba($link-color, .125)
     }
 }
 
@@ -511,19 +511,19 @@ header {
     display:inline;
 
     &.pagination_current {
-      background: rgba($link-color, .375);
+      background: lighten($link-color, 50%); //rgba($link-color, .375)
       color: rgba(black,.8);
       padding: .25em .75em;
     }
   }
   a {
     text-decoration:none;
-    background: rgba($link-color, .05);
+    background: lighten($link-color, 65%); //rgba($link-color, .05)
     padding: .25em .75em;
 
     &:hover,
     &:focus {
-      background: rgba($link-color, .125);
+      background: lighten($link-color, 50%); //rgba($link-color, .125)
     }
   }
 }
