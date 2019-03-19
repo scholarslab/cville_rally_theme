@@ -67,7 +67,7 @@ body,
     @include flexbox();
     @include flex-direction(column);
     @include order(1);
-    @include flex(1.75);
+    @include flex(2);
 }
 .side-bar {
   @include flexbox();
@@ -76,7 +76,6 @@ body,
   @include flex(1);
   padding: 1rem;
   margin: 1rem;
-  float: center;
   display: block;
   border: hidden;
   background-color: $background-color-white;
@@ -329,6 +328,9 @@ header {
   display: block;
   padding: 1rem;
   // background-color: $background-color-primary-nav;
+  @include flexbox();
+  @include flex-flow(row wrap);
+  @include justify-content(space-between);
 
   a {
     float: left;
@@ -400,12 +402,12 @@ header {
 }
 
 @media all and (max-width: 800px) {
-  .navigation {
+  .navigation, .topnav {
     @include justify-content(flex-start);
   }
 }
 @media all and (max-width: 600px) {
-  .navigation {
+  .navigation, .topnav {
     @include flex-flow(column wrap);
     padding: 0;
   }

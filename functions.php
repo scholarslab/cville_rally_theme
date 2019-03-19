@@ -212,14 +212,3 @@ function cville_theme_logo()
     }
 
 }
-function cville_theme_logo_sm()
-{
-$logosm = get_theme_option('Logosm');
-if ($logosm) {
-    $storage = Zend_Registry::get('storage');
-    $uri = $storage->getUri($storage->getPathByType($logosm, 'theme_uploads'));
-    return '<img src="' . $uri . '" alt="' . get_theme_option('logo_alt') . '" width="80" class="logo-short"/>';
-}
-
-
-}

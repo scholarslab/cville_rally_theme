@@ -520,11 +520,11 @@ body,
   -ms-flex-order: 1;
   -webkit-order: 1;
   order: 1;
-  -webkit-box-flex: 1.75;
-  -moz-box-flex: 1.75;
-  -webkit-flex: 1.75;
-  -ms-flex: 1.75;
-  flex: 1.75;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
 }
 
 .side-bar {
@@ -549,7 +549,6 @@ body,
   flex: 1;
   padding: 1rem;
   margin: 1rem;
-  float: center;
   display: block;
   border: hidden;
   background-color: #fff;
@@ -789,6 +788,20 @@ header {
   overflow: hidden;
   display: block;
   padding: 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
 }
 .topnav a {
   float: left;
@@ -854,7 +867,7 @@ header {
 }
 
 @media all and (max-width: 800px) {
-  .navigation {
+  .navigation, .topnav {
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
@@ -863,7 +876,7 @@ header {
   }
 }
 @media all and (max-width: 600px) {
-  .navigation {
+  .navigation, .topnav {
     -webkit-flex-flow: column wrap;
     -moz-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
