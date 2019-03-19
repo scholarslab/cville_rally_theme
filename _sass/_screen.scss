@@ -531,13 +531,15 @@ header {
 
 .browse,
   .tags,
-  .items {
+  .items,
+  .collection {
       .secondary-nav li, #secondary-nav li{
           @include line-button;
       }
 }
 
-.browse { /* browse view */
+.browse, 
+.collection { /* browse view */
   .items {
     @include flexbox();
     @include justify-content(space-between);
@@ -559,6 +561,14 @@ header {
       text-decoration: underline;
     }
 }
+.item h3 a {
+  font-size: $base-font-size * 1.25;
+  &:hover,
+    &:focus {
+      // color: $secondary-text-color;
+      text-decoration: underline;
+    }
+}
 
 //Simple Pages
 #homepage-text,
@@ -566,7 +576,8 @@ header {
 .items #primary,
 .browse #primary,
 .contribution #primary,
-.simple-page #primary {
+.simple-page #primary,
+.collections #primary {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;

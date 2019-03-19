@@ -971,14 +971,18 @@ header {
 .tags .secondary-nav li:before,
 .tags #secondary-nav li:before,
 .items .secondary-nav li:before,
-.items #secondary-nav li:before {
+.items #secondary-nav li:before,
+.collection .secondary-nav li:before,
+.collection #secondary-nav li:before {
   content: "\2014\0020";
 }
 
-.browse {
+.browse,
+.collection {
   /* browse view */
 }
-.browse .items {
+.browse .items,
+.collection .items {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -994,7 +998,8 @@ header {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-.browse .item {
+.browse .item,
+.collection .item {
   width: 29%;
   margin-bottom: 2em;
 }
@@ -1006,12 +1011,20 @@ header {
   text-decoration: underline;
 }
 
+.item h3 a {
+  font-size: 20px;
+}
+.item h3 a:hover, .item h3 a:focus {
+  text-decoration: underline;
+}
+
 #homepage-text,
 #home article div.side-bar,
 .items #primary,
 .browse #primary,
 .contribution #primary,
-.simple-page #primary {
+.simple-page #primary,
+.collections #primary {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;

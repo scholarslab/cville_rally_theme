@@ -50,5 +50,5 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
 </ul>
 </nav>
 
-</div>
+</div><!-- end id="primary" -->
 <?php echo foot(); ?>
