@@ -25,11 +25,11 @@ $base-color-dark                : darken($base-color, 10%);
 $base-color-darker              : darken($base-color, 20%);
 $base-color-darkest             : darken($base-color, 30%);
 
-$link-color                     : $primary-text-color;
+$link-color                     : #494949; //  darken($primary-text-color, 20%)
 $link-visited-color             : $link-color;
-$link-hover-color               : darken($link-color, 20%);
+$link-hover-color               : darken($link-color, 30%);
 $link-focus-color               : $link-hover-color;
-$link-active-color              : darken($link-color, 20%);
+$link-active-color              : darken($link-color, 30%);
 
 
 // ---------------------------------------------------------------------------

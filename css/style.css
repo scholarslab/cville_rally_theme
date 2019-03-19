@@ -593,19 +593,19 @@ ul ul, ol ul {
 }
 
 a:link {
-  color: #595959;
+  color: #494949;
 }
 a:visited {
-  color: #595959;
+  color: #494949;
 }
 a:hover {
-  color: #262626;
+  color: black;
 }
 a:focus {
-  color: #262626;
+  color: black;
 }
 a:active {
-  color: #262626;
+  color: black;
 }
 h1 a, h2 a, h3 a {
   text-decoration: none;
@@ -680,7 +680,7 @@ h1 a, h2 a, h3 a {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(89, 89, 89, 0.125);
+  background-color: #e2e2e2;
   padding: 1rem;
   width: 100%;
 }
@@ -904,12 +904,12 @@ header {
 .item-pagination a {
   display: block;
   text-decoration: none;
-  background: rgba(89, 89, 89, 0.05);
+  background: rgba(73, 73, 73, 0.05);
   padding: .25em .75em;
   margin-right: 2rem;
 }
 .item-pagination a:hover, .item-pagination a:focus {
-  background: rgba(89, 89, 89, 0.125);
+  background: rgba(73, 73, 73, 0.125);
 }
 
 .item-pagination li.next {
@@ -952,17 +952,17 @@ header {
   display: inline;
 }
 .pagination_list li.pagination_current {
-  background: rgba(89, 89, 89, 0.375);
+  background: rgba(73, 73, 73, 0.375);
   color: rgba(0, 0, 0, 0.8);
   padding: .25em .75em;
 }
 .pagination_list a {
   text-decoration: none;
-  background: rgba(89, 89, 89, 0.05);
+  background: rgba(73, 73, 73, 0.05);
   padding: .25em .75em;
 }
 .pagination_list a:hover, .pagination_list a:focus {
-  background: rgba(89, 89, 89, 0.125);
+  background: rgba(73, 73, 73, 0.125);
 }
 
 /* -------------------------------------------------------------------------*/
