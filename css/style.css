@@ -732,15 +732,15 @@ header {
   padding: 0;
 }
 
-#site-title {
+#site-title h1 {
   margin: 0;
   padding: 1.5rem;
   overflow: hidden;
+  text-overflow: inherit;
   font-size: 32px;
   line-height: 36px;
   font-family: 'Libre Franklin',arial,sans-serif;
   font-weight: 800;
-  text-overflow: inherit;
 }
 #site-title a {
   text-decoration: none;

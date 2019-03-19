@@ -114,6 +114,7 @@
 <?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar no-bg ' . @$bodyclass)); ?>
   <a href="#main" id="skipnav"><?php echo __('Skip to main content'); ?></a>
   <?php echo common('admin-bar'); ?>
+
   <header role="banner">
     <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
     <div class="topnav" role="navigation">
@@ -126,8 +127,7 @@
               <?php endif;?>
               <?php if($logosm = cville_theme_logo_sm()): ?>
                 <?php echo $logosm; ?>
-              <?php endif;?>
-        </a>
+              <?php endif;?></a>
         <?php else: ?>
         <?php if($logo = cville_theme_logo()): ?>
                 <?php echo $logo; ?>
@@ -138,13 +138,15 @@
         <?php endif;?>
       </span>
     </div> 
+
     <div id="site-title">
-          <a href="<?php echo url('/'); ?>">
+          <h1><a href="<?php echo url('/'); ?>">
               <?php if($tagline = get_theme_option('Tagline Text')): ?>
                 <?php echo $tagline; ?>
               <?php endif;?>
-          </a>
+          </a></h1>
     </div>
+
     <nav class="navigation" role="navigation">
         <?php echo public_nav_main(); ?>
     </nav>

@@ -261,15 +261,17 @@ header {
 
 #site-title {
     // background-color: $background-color-primary-nav;
+    & h1 {
     margin: 0; 
     padding: 1.5rem;
     overflow: hidden;
+    text-overflow: inherit;
     // color: $white-text-color;
     font-size: $base-font-size * 2;
     line-height: $base-line-height * 1.5;
     font-family: 'Libre Franklin',arial,sans-serif;
     font-weight: 800;
-    text-overflow: inherit;
+    }
     & a {
       // color: $white-text-color;
       text-decoration: none;
