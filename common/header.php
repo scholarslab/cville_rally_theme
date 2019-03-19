@@ -113,8 +113,7 @@
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar no-bg ' . @$bodyclass)); ?>
   <a href="#main" id="skipnav"><?php echo __('Skip to main content'); ?></a>
-  <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
-
+  <?php echo common('admin-bar'); ?>
   <header role="banner">
     <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
     <div class="topnav" role="navigation">
