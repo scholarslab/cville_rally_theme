@@ -1386,15 +1386,19 @@ textarea.placeholder_text {
 
 button:focus,
 button:active,
+button:hover,
+input:hover,
 input:focus,
 input:active,
 select:focus,
 select:active,
+select:hover,
 textarea:focus,
 textarea:active {
   -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+  color: black;
   /* for Opera */
   z-index: 1;
 }
@@ -1554,9 +1558,6 @@ fieldset {
 }
 #advanced-search-form .field {
   border-bottom: 1px solid #ccc;
-  width: 100%;
-  overflow: auto;
-  padding: 24px 0;
   margin-bottom: 0;
 }
 #advanced-search-form .field .inputs {
