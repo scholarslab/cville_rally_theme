@@ -2,6 +2,7 @@
 <html lang="<?php echo get_html_lang(); ?>">
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" sizes="32x32" href="//www.library.virginia.edu/images/icon-32.png">
   <title><?php echo option('site_title'); echo isset($title) ? ' | ' . strip_formatting($title) : ''; ?>
   </title>
   <meta name="viewport" content="width=device-width">
