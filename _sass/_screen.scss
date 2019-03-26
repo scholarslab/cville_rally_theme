@@ -86,6 +86,7 @@ body,
   & h3 {
     padding-bottom: .5rem;
     padding-top: .75rem;
+    text-transform:uppercase;
   }
 }
 
@@ -140,7 +141,7 @@ a {
 
   h1, h2 {
     font-family: $font-family-title;
-    font-weight: $font-weight-demi; 
+    font-weight: $font-weight-medium; 
   }
 }
 #main h1 {
@@ -149,16 +150,17 @@ a {
   margin-bottom: 2rem;
 }
 #main h2 {
-  font-size: $base-font-size * 1.5;
-  margin: 1em 0 0.67em;
+  font-size: $base-font-size * 1.875;
+  line-height: $base-line-height * 1.25;
+  margin: 0.67em 0 0.67em;
   // color: $base-color;
 }
 #main h3 { 
   font-family: $font-family-title;
   // color: $base-color; 
-  font-weight: $font-weight-demi;
-  font-size: 1.25rem; 
-  margin: 1em 0 0.67em; 
+  font-weight: $font-weight-medium;
+  font-size: $base-font-size * 1.5; 
+  margin: 0.67em 0 0.67em; 
   // text-transform: uppercase; 
   -webkit-margin-before: 0;
 }
@@ -166,7 +168,7 @@ a {
   // color: $base-color; 
   font-family: $default-font; 
   font-size: $base-font-size * 1.2; 
-  font-weight: $font-weight-demi; 
+  font-weight: $font-weight-medium; 
   margin: 0.67em;
   text-transform: uppercase;
   // text-decoration: underline;
@@ -185,9 +187,9 @@ a {
   color: $primary-text-color;
   @include flex(1 1 auto);
 
-  & h3 {
+  & h2 {
     padding-bottom: .5rem;
-    padding-top: .75rem;
+    // padding-top: .5rem;
   }
 
   & p {
@@ -205,7 +207,8 @@ a {
   padding: 1rem;
   width: 100%;
   a{
-    font-weight: $font-weight-demi;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: $base-font-size;
     text-transform: uppercase;
     text-decoration: none;
@@ -215,7 +218,7 @@ a {
 .aside {
   background: $background-color-sidebar;
   padding: 2rem;
-  margin: 1.5rem -1.5rem -1.5rem;
+  margin: 1rem -1rem -1rem -1rem;
   @include flexbox();
   // @include flex-direction(column);
 }
@@ -230,7 +233,7 @@ div.icons {
     text-align: center;
     text-decoration: none;
     // color: $secondary-text-color;
-    font-weight: $font-weight-demi;
+    font-weight: $font-weight-main;
     font-size: 1rem;
     &:hover,
     &:focus {
@@ -268,8 +271,8 @@ header {
     // color: $white-text-color;
     font-size: $base-font-size * 2;
     line-height: $base-line-height * 1.5;
-    font-family: 'Libre Franklin',arial,sans-serif;
-    font-weight: 800;
+    font-family: $font-family-main;
+    font-weight: $font-weight-medium;
     }
     & a {
       // color: $white-text-color;
@@ -286,7 +289,7 @@ header {
     // background-image: linear-gradient(rgba(0,61,138, 0.6), rgba(0,61,138, 0.8));
     background-size: cover;
     background-position: center top;
-    margin: -1.5rem -1.5rem 1.5rem;
+    margin: -1rem -1rem 1rem -1rem;
   }
 
 #introduction p {
@@ -391,7 +394,7 @@ header {
   & a {
     // color: $white-text-color;
     line-height: $base-line-height * 1.5;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-main;
     padding: 1.5rem;
     text-decoration: none;
   }
@@ -501,7 +504,7 @@ header {
 .pagination_list,
 .sort-links {
   font-size: $base-font-size * .9;
-  line-height: 1;
+  line-height: $base-line-height * 1.25;;
 }
 .pagination_list {
   list-style:none;

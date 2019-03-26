@@ -9,7 +9,9 @@
   <?php if ($description = option('description')): ?>
   <meta name="description" content="<?php echo $description; ?>">
   <?php endif; ?>
+  <script src="//use.typekit.net/tgy5tlj.js"></script>
 
+<script>try{Typekit.load();}catch(e){}</script>
   <?php echo auto_discovery_link_tags(); ?>
 
 <!-- Plugin Stuff -->
@@ -26,9 +28,9 @@
   <?php endif; ?>
 
   <?php
-      ($backgroundColor = get_theme_option('background_color')) || ($backgroundColor = "#002f6c");
+      ($backgroundColor = get_theme_option('background_color')) || ($backgroundColor = "#002f6c"); //#0d3268
       ($textColor = get_theme_option('text_color')) || ($textColor = "#FFFFFF");
-      ($navbackgroundColor = get_theme_option('navbackground_color')) || ($navbackgroundColor = "#00224d");
+      ($navbackgroundColor = get_theme_option('navbackground_color')) || ($navbackgroundColor = "#002359"); //#012554
       ($navtextColor = get_theme_option('navtext_color')) || ($navtextColor = "#FFFFFF");
       ($htextColor = get_theme_option('htext_color')) || ($htextColor = "#232d4b");
   ?>

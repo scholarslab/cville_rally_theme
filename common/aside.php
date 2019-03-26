@@ -1,5 +1,5 @@
 <div class="side-bar">
-  <h4>Browse the Collection</h4>
+  <h3>Browse the Collection</h3>
       <div class="icons">
         <a href="<?php echo url('/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=&advanced%5B0%5D%5Btype%5D=&advanced%5B0%5D%5Bterms%5D=&type=6&collection=&submit_search=Search+for+items'); ?>">
         <svg version="1.1" id="photo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

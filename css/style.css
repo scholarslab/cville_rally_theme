@@ -428,7 +428,7 @@ body {
 
 body {
   min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -559,6 +559,7 @@ body,
 .side-bar h3, .side-bar legend {
   padding-bottom: .5rem;
   padding-top: .75rem;
+  text-transform: uppercase;
 }
 
 @media all and (min-width: 600px) {
@@ -615,8 +616,8 @@ h1 a, h2 a, h3 a, legend a {
   background-color: #fff;
 }
 #main h1, #main h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 500;
 }
 
 #main h1 {
@@ -625,22 +626,23 @@ h1 a, h2 a, h3 a, legend a {
 }
 
 #main h2 {
-  font-size: 24px;
-  margin: 1em 0 0.67em;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0.67em 0 0.67em;
 }
 
 #main h3, #main legend {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin: 1em 0 0.67em;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0.67em 0 0.67em;
   -webkit-margin-before: 0;
 }
 
 #main h4 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
   font-size: 19.2px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0.67em;
   text-transform: uppercase;
 }
@@ -663,9 +665,8 @@ h1 a, h2 a, h3 a, legend a {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
-.content h3, .content legend {
+.content h2 {
   padding-bottom: .5rem;
-  padding-top: .75rem;
 }
 .content p {
   padding-bottom: 1rem;
@@ -682,6 +683,7 @@ h1 a, h2 a, h3 a, legend a {
   width: 100%;
 }
 .content footer a {
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
@@ -691,7 +693,7 @@ h1 a, h2 a, h3 a, legend a {
 .aside {
   background: #f5f5f5;
   padding: 2rem;
-  margin: 1.5rem -1.5rem -1.5rem;
+  margin: 1rem -1rem -1rem -1rem;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -708,7 +710,7 @@ div.icons {
 div.icons a {
   text-align: center;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1rem;
 }
 div.icons a:hover, div.icons a:focus {
@@ -736,8 +738,8 @@ header {
   text-overflow: inherit;
   font-size: 32px;
   line-height: 36px;
-  font-family: 'Libre Franklin',arial,sans-serif;
-  font-weight: 800;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 500;
 }
 #site-title a {
   text-decoration: none;
@@ -750,7 +752,7 @@ header {
   min-height: 40vh;
   background-size: cover;
   background-position: center top;
-  margin: -1.5rem -1.5rem 1.5rem;
+  margin: -1rem -1rem 1rem -1rem;
 }
 
 #introduction p {
@@ -803,7 +805,7 @@ header {
 }
 .topnav a {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
   text-transform: uppercase;
 }
 .topnav a:hover {
@@ -855,7 +857,7 @@ header {
 }
 .navigation a {
   line-height: 36px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 1.5rem;
   text-decoration: none;
 }
@@ -950,7 +952,7 @@ header {
 .pagination_list,
 .sort-links {
   font-size: 14.4px;
-  line-height: 1;
+  line-height: 30px;
 }
 
 .pagination_list {
@@ -1061,7 +1063,7 @@ header {
 legend {
   padding: 0.9em 0 1.0em;
   font-size: 1.333em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
   color: #4B676E;
 }
 
@@ -1285,7 +1287,7 @@ input[type="button"] {
   -webkit-appearance: none;
   border: 0;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   outline: 0;
@@ -1346,7 +1348,7 @@ input[type="week"] {
   outline: 0;
   padding: 2px 10px;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
   height: 1.8em;
   /* IE7 */
   *padding-top: 2px;
@@ -1475,7 +1477,7 @@ select[multiple] {
     border: 1px solid;
     border-color: #747474 #5e5e5e #4f4f4f;
     color: #fff;
-    font: 11px/1 "Open Sans", sans-serif;
+    font: 11px/1 "franklin-gothic-urw", arial, sans-serif;
     padding: 15px 15px 17px;
     text-shadow: #000 0 0 1px;
   }
@@ -1701,7 +1703,7 @@ div.error {
 }
 #advanced-search-form .field .remove_search:after {
   content: "\f00d";
-  font-family: "Open Sans", sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
   text-indent: 0;
   text-align: center;
   width: 100%;

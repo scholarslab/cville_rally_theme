@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
 // ---------------------------------------------------------------------------
 // Colors
 $primary-text-color             : #595959;
@@ -35,10 +36,13 @@ $link-active-color              : darken($link-color, 30%);
 // ---------------------------------------------------------------------------
 // Typography
 
-$font-family-main: 'Open Sans', sans-serif;
+$font-family-main: 'franklin-gothic-urw',arial,sans-serif; //'Open Sans', sans-serif
+$font-secondary: 'franklingothic-demi', sans-serif;
+$font-family-condensed: 'franklin-gothic-urw-cond',arial narrow,sans-serif;
+$font-family-compressed: 'franklin-gothic-urw-comp',arial narrow,sans-serif;
 $base-font-size: 16px;
 $base-line-height: 24px;
-$font-family-title: 'Open Sans', sans-serif;
+$font-family-title: 'franklin-gothic-urw',arial,sans-serif; //'Open Sans', sans-serif
 // 'Libre Franklin',arial,sans-serif;
 
 $spacing-unit: $base-line-height;
