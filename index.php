@@ -44,6 +44,45 @@
     <?php echo common('aside'); ?>
 </article>
 
+<!-- Featured Item -->
+<?php if (get_theme_option('Display Featured Item') == 1): ?>
+    <article class="aside">
+    <div class="side-bar">
+    <h2><?php echo __('Featured Items'); ?></h2>
+    <div class="items browse">
+    <div id="featured-item" class="items">
+        <?php echo random_featured_items(3); ?>
+    </div>
+    </div>
+    </article>
+<?php endif; ?>
+<!--end featured-item-->	
+
+<!-- Featured Collection -->
+<?php if (get_theme_option('Display Featured Collection')): ?>
+    <article class="aside">
+    <div class="side-bar">
+    <div id="featured-collection">
+        <h2><?php echo __('Featured Collection'); ?></h2>
+        <?php echo random_featured_collection(); ?>
+    </div>
+    </div>
+    </article>
+    <?php endif; ?>	
+<!-- end featured collection -->
+
+<!-- Featured Exhibit -->
+    <?php if ((get_theme_option('Display Featured Exhibit')) && function_exists('exhibit_builder_display_random_featured_exhibit')): ?>
+    <article class="aside">
+    <div class="side-bar">
+    <?php echo exhibit_builder_display_random_featured_exhibit(); ?>
+    </div>
+    </article>
+    <?php endif; ?>
+<!-- end featured Exhibit -->
+
+
+
 <?php fire_plugin_hook('public_home', array('view' => $this)); ?>
 
 <?php echo foot(); ?>

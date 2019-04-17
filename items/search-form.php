@@ -42,11 +42,11 @@ $formAttributes['method'] = 'GET';
         </div>
     </div>
 <!-- Search by Location -->
-    <div class="field">
+    <div class="field" type="hidden">
         <div class="label"><?php echo __('Search by Location'); ?></div>
             <div class="inputs">
-            <input type="hidden" name="advanced[0][element_id]" value="81">
-            <input type="hidden" name="advanced[0][type]" value="is exactly">
+            <!-- <input type="hidden" name="advanced[0][element_id]" value="81">
+            <input type="hidden" name="advanced[0][type]" value="is exactly"> -->
             <?php
                     echo $this->formSelect(
                         "advanced[0][terms]",
@@ -76,7 +76,17 @@ $formAttributes['method'] = 'GET';
                         )
                     );
             ?>
-    </div>
+
+            <!-- some attempt to fix location search -->
+             <?php if ($_GET['terms']) { ?>
+                    <input type="hidden" name="advanced[0][element_id]" value="81">
+                    <input type="hidden" name="advanced[0][type]" value="is exactly">
+               <?php } else { ?>
+                <input type="hidden" name="" value="">
+                 <?php  
+                }
+                ?>
+    </div> 
 
     <!-- <div class="field">
         <?php echo $this->formLabel('collection-search', __('Search By Collection')); ?>

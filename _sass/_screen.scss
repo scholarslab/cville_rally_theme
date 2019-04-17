@@ -217,7 +217,7 @@ a {
 
 .aside {
   background: $background-color-sidebar;
-  padding: 2rem;
+  padding: 0.5rem 2rem;
   margin: 1rem -1rem -1rem -1rem;
   @include flexbox();
   // @include flex-direction(column);
@@ -330,7 +330,6 @@ header {
   overflow: hidden;
   display: block;
   padding: 1rem;
-  // background-color: $background-color-primary-nav;
   @include flexbox();
   @include flex-flow(row wrap);
   @include justify-content(space-between);
@@ -596,6 +595,7 @@ header {
 .simple-page #primary {
   overflow:hidden;
 }
+
 /* -------------------------------------------------------------------------*/
 /* !---------- Contributed Items ---------- */
 // contribution form additions
