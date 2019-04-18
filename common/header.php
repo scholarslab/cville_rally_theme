@@ -118,6 +118,11 @@
     </div> 
 
     <div id="site-title">
+          <h2><a href="<?php echo url('/'); ?>">
+          <?php if($siteTitle = get_theme_option('Site Title')): ?>
+                <?php echo $siteTitle; ?>
+              <?php endif;?>
+          </a></h2>
           <h1><a href="<?php echo url('/'); ?>">
               <?php if($tagline = get_theme_option('Tagline Text')): ?>
                 <?php echo $tagline; ?>

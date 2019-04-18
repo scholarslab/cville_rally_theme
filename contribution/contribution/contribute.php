@@ -44,25 +44,21 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
         ?>
         <p>You must <a href='<?php echo url('guest-user/user/register'); ?>'>create an account</a> or <a href='<?php echo url('guest-user/user/login'); ?>'>log in</a> before contributing. You can still leave your identity to site visitors anonymous.</p>
     <?php else: ?>
+
     <div class="flex-container">
         <div class="main-content">
-            <p>The form below is for submission of <em><strong>your personal digital documentation</strong></em> related to the events around August 11 & 12, 2017 in Charlottesville, VA.</p>
-            <p><strong><?php echo __("Before contributing materials, please read the full %s",  "<a href='" . contribution_contribute_url('terms') . "' target='_blank'>" . __('Terms and Conditions') . ".</a>"); ?></strong></p>
-            <h2>NOTES:</h2>
-            <ul>
-                <li>Individual file size limit is 250Mb.</li>
-                <li>If your file is too large to upload, or if you have a large number of items to contribute, please select the "Link" type in the below Collection Form to provide us with a URL for an album or file location (i.e. Dropbox folder, Flickr album, etc.).</li>
-                <li>We will make our best effort to capture media linked in submitted URLs but, due to high volume, we cannot commit to fully capturing all materials received in this way. <strong>The best way to submit materials is through the Collections Form below.</strong></li>
-            </ul>
-        </div>
-        <div class="side-bar">
-           <h3>QUESTIONS OR CONCERNS?</h3> 
-            <ul style="list-style-type:circle;">
-            <li>Please contact us at <a href="mailto:digital_collecting@virginia.edu">digital_collecting@virginia.edu</a>.</li>
-                <li>If you wish to donate physical materials or media, please <a href="mailto:digital_collecting@virginia.edu?subject=Donating%20physical%20materials%20to%20Rally%20collection">contact Special Collections</a> directly.</li>
-                <li>To nominate <em>other people's online work</em> for capture, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWD06gQiZ35z_HB57sulIV_BRdfGakcTCzO9fVn4Sc8INRwQ/viewform">please use our URL capture form</a>.</li>
-            </ul>
-        </div>
+        <?php if ($contributionContent = get_theme_option('contribution_content')): ?>
+            <?php echo $contributionContent; ?>
+        <?php endif; ?>
+    </div>
+
+    <?php if ($contributionContact = get_theme_option('contribution_contact')): ?>
+    <div class="side-bar">
+        <h3>QUESTIONS OR CONCERNS?</h3> 
+        <?php echo $contributionContact; ?>
+    </div>
+    <?php endif; ?>
+
     </div>
    
     <h2>Collection Form</h2>

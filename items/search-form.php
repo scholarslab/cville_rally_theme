@@ -41,44 +41,46 @@ $formAttributes['method'] = 'GET';
         ?>
         </div>
     </div>
+
+
 <!-- Search by Location -->
-    <div class="field" type="hidden">
+    <div class="field">
         <div class="label"><?php echo __('Search by Location'); ?></div>
-            <div class="inputs">
-            <!-- <input type="hidden" name="advanced[0][element_id]" value="81">
+        <div class="inputs">
+        <!-- <input type="hidden" name="advanced[0][element_id]" value="81">
             <input type="hidden" name="advanced[0][type]" value="is exactly"> -->
-            <?php
-                    echo $this->formSelect(
-                        "advanced[0][terms]",
-                        @$_REQUEST['terms'],
-                        array(
-                            'title' => __("Search Terms"),
-                            'id' => null,
-                            'class' => 'advanced-search-terms'
-                        ),
-                        label_table_options(array(
-                            'UVA Academical Village' => __('UVA Academical Village'),
-                            'UVA Lawn' => __('UVA Lawn'),
-                            'UVA Nameless Field' => __('UVA Nameless Field'),
-                            'UVA Rotunda' => __('UVA Rotunda'),
-                            'UVA Thomas Jefferson Statue' => __('UVA Thomas Jefferson Statue'),
-                            'St. Paul’s Memorial Church' => __('St. Paul’s Memorial Church'),
-                            'Emancipation Park (Lee Park)' => __('Emancipation Park (Lee Park)'),
-                            'Justice Park (Jackson Park)' => __('Justice Park (Jackson Park)'),
-                            'McGuffey Park' => __('McGuffey Park'),
-                            'McIntire Park' => __('McIntire Park'),
-                            'Charlottesville Pedestrian Mall' => __('Charlottesville Pedestrian Mall'),
-                            'Paramount Theatre' => __('Paramount Theatre'),
-                            'Albemarle-Charlottesville Regional Jail' => __('Albemarle-Charlottesville Regional Jail'),
-                            'Martha Jefferson Hospital' => __('Martha Jefferson Hospital'),
-                            'University of Virginia Medical Center' => __('University of Virginia Medical Center'),
-                            'Other' => __('Other'))
-                        )
-                    );
+        <?php
+            echo $this->formSelect(
+                "advanced[0][terms]",
+                @$_REQUEST['terms'],
+                array(
+                    'title' => __("Search Terms"),
+                    'id' => null,
+                    'class' => 'advanced-search-terms'
+                ),
+                label_table_options(array(
+                    'UVA Academical Village' => __('UVA Academical Village'),
+                    'UVA Lawn' => __('UVA Lawn'),
+                    'UVA Nameless Field' => __('UVA Nameless Field'),
+                    'UVA Rotunda' => __('UVA Rotunda'),
+                    'UVA Thomas Jefferson Statue' => __('UVA Thomas Jefferson Statue'),
+                    'St. Paul’s Memorial Church' => __('St. Paul’s Memorial Church'),
+                    'Emancipation Park (Lee Park)' => __('Emancipation Park (Lee Park)'),
+                    'Justice Park (Jackson Park)' => __('Justice Park (Jackson Park)'),
+                    'McGuffey Park' => __('McGuffey Park'),
+                    'McIntire Park' => __('McIntire Park'),
+                    'Charlottesville Pedestrian Mall' => __('Charlottesville Pedestrian Mall'),
+                    'Paramount Theatre' => __('Paramount Theatre'),
+                    'Albemarle-Charlottesville Regional Jail' => __('Albemarle-Charlottesville Regional Jail'),
+                    'Martha Jefferson Hospital' => __('Martha Jefferson Hospital'),
+                    'University of Virginia Medical Center' => __('University of Virginia Medical Center'),
+                    'Other' => __('Other'))
+                )
+            );
             ?>
 
-            <!-- some attempt to fix location search -->
-             <?php if ($_GET['terms']) { ?>
+            <!-- attempt to fix location search -->
+            <?php if ($_GET['advanced[0][terms]']) { ?>
                     <input type="hidden" name="advanced[0][element_id]" value="81">
                     <input type="hidden" name="advanced[0][type]" value="is exactly">
                <?php } else { ?>
@@ -86,7 +88,8 @@ $formAttributes['method'] = 'GET';
                  <?php  
                 }
                 ?>
-    </div> 
+                
+        </div>
 
     <!-- <div class="field">
         <?php echo $this->formLabel('collection-search', __('Search By Collection')); ?>
@@ -115,3 +118,4 @@ $formAttributes['method'] = 'GET';
         Omeka.Search.activateSearchButtons();
     });
 </script>
+

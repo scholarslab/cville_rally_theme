@@ -195,6 +195,9 @@ a {
   & p {
     padding-bottom: 1rem;
   }
+  & div {
+    padding-bottom: 1rem;
+  }
 }
 
 .content footer {
@@ -262,10 +265,11 @@ header {
 }
 
 #site-title {
+  padding: .5rem 1.5rem;
     // background-color: $background-color-primary-nav;
     & h1 {
     margin: 0; 
-    padding: 1.5rem;
+    padding-bottom: 1.5rem;
     overflow: hidden;
     text-overflow: inherit;
     // color: $white-text-color;
@@ -274,6 +278,17 @@ header {
     font-family: $font-family-main;
     font-weight: $font-weight-medium;
     }
+    & h2 {
+      margin: 0; 
+      // padding: 1.5rem;
+      overflow: hidden;
+      text-overflow: inherit;
+      // color: $white-text-color;
+      font-size: $base-font-size * 1.5;
+      line-height: $base-line-height * 1.5;
+      font-family: $font-family-main;
+      font-weight: $font-weight-medium;
+      }
     & a {
       // color: $white-text-color;
       text-decoration: none;

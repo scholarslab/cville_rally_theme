@@ -671,6 +671,9 @@ h1 a, h2 a, h3 a, legend a {
 .content p {
   padding-bottom: 1rem;
 }
+.content div {
+  padding-bottom: 1rem;
+}
 
 .content footer {
   display: block;
@@ -731,12 +734,24 @@ header {
   padding: 0;
 }
 
+#site-title {
+  padding: .5rem 1.5rem;
+}
 #site-title h1 {
   margin: 0;
-  padding: 1.5rem;
+  padding-bottom: 1.5rem;
   overflow: hidden;
   text-overflow: inherit;
   font-size: 32px;
+  line-height: 36px;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 500;
+}
+#site-title h2 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: inherit;
+  font-size: 24px;
   line-height: 36px;
   font-family: "franklin-gothic-urw", arial, sans-serif;
   font-weight: 500;
