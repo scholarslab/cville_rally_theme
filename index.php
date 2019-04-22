@@ -1,14 +1,6 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<?php if ($headerBackground = theme_header_background() || $introText = get_theme_option('intro_text')): ?>
-<header id="introduction" role="heading">
-    <?php if ($introText = get_theme_option('intro_text')): ?>
-    <p><?php echo $introText; ?></p>
-    <?php endif; ?>
-    </header>
-    <?php endif; ?>
-
-  <div id="homepage-text" class="flex-container">
+<div id="homepage-text" class="flex-container">
 <!-- Content Box: Archive -->
   <?php if ($archiveText = get_theme_option('archive_text')): ?>
     <div class="flex-item">
@@ -56,16 +48,19 @@
     </div>
   <?php endif; ?>
 <!-- end Content Box: Questions? -->
-</div>
 
+<!-- Browse Collection items -->
 <article class="aside">
-    <?php echo common('aside'); ?>
+    <div class="content">
+      <?php echo common('aside'); ?>
+      </div>
 </article>
+<!-- end Browse Collection items -->
 
 <!-- Featured Items -->
 <?php if (get_theme_option('Display Featured Item') == 1): ?>
-    <article class="aside">
-    <div class="side-bar">
+<article class="aside">
+    <div class="content">
     <h2><?php echo __('Featured Items'); ?></h2>
     <div class="items browse">
     <div id="featured-item" class="items">
@@ -73,39 +68,39 @@
     </div>
     <p class="view-items-link"><a href="<?php echo html_escape(url('items')); ?>"><?php echo __('View All Items'); ?></a></p>
     </div>
-    </article>
+    </div>
+</article>
 <?php endif; ?>
 <!--end featured-items-->	
 
 <!-- Featured Collection -->
 <?php if (get_theme_option('Display Featured Collection')): ?>
-    <article class="aside">
-    <div class="side-bar">
+<div class="flex-item">
+      <div class="content">
     <div id="featured-collection">
         <h2><?php echo __('Featured Collection'); ?></h2>
         <?php echo random_featured_collection(); ?>
     </div>
     <p class="view-collections-link"><a href="<?php echo html_escape(url('collections')); ?>"><?php echo __('View All Collections'); ?></a></p>
     </div>
-    </article>
+    </div>
     <?php endif; ?>	
 <!-- end featured collection -->
 
 <!-- Featured Exhibit -->
     <?php if ((get_theme_option('Display Featured Exhibit')) && function_exists('exhibit_builder_display_random_featured_exhibit')): ?>
-    <article class="aside">
-    <div class="side-bar">
+    <div class="flex-item">
+      <div class="content">
     <?php echo exhibit_builder_display_random_featured_exhibit(); ?>
     </div>
-    </article>
+    </div>
     <?php endif; ?>
 <!-- end featured Exhibit -->
 
 <!-- Recent Items -->
 <?php if (get_theme_option('Homepage Recent Items') == 1): ?>
-
-    <article class="aside">
-    <div class="side-bar">
+<div class="flex-item">
+      <div class="content">
     <h2><?php echo __('Recently Added Items'); ?></h2>
     <div class="items browse">
     <div id="featured-item" class="items">
@@ -113,12 +108,12 @@
     </div>
     <p class="view-items-link"><a href="<?php echo html_escape(url('items')); ?>"><?php echo __('View All Items'); ?></a></p>
     </div>
-    </article>
-<?php endif; ?>
+    </div>
+    <?php endif; ?>
 <!-- end Recent items -->
 
-
-
+</div>
+<!-- end flex-container -->
 
 <?php fire_plugin_hook('public_home', array('view' => $this)); ?>
 

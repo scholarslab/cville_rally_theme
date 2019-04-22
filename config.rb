@@ -7,6 +7,6 @@ css_dir = "css"
 sass_dir = "_sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
-output_style = :expanded # expanded, nested, compact, or compressed
+output_style = :compressed # expanded, nested, compact, or compressed
 relative_assets = false
 line_comments = false

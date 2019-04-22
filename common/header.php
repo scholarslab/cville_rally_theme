@@ -133,6 +133,19 @@
     <nav class="navigation" role="navigation">
         <?php echo public_nav_main(); ?>
     </nav>
+
+<!-- Homepage Banner Image and Intro text -->
+    <?php if ($bodyid=='home'):?>
+      <?php if ($headerBackground = theme_header_background() || $introText = get_theme_option('intro_text')): ?>
+      <header id="introduction" role="heading">
+      <?php if ($introText = get_theme_option('intro_text')): ?>
+      <p><?php echo $introText; ?></p>
+      <?php endif; ?>
+      </header>
+      <?php endif; ?>
+    <?php endif; ?>
+<!-- end Homepage Banner Image and Intro text -->
+    
   </header>
   
   <div class="wrapper">

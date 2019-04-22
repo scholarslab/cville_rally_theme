@@ -40,7 +40,6 @@ body,
 .wrapper {
     @include flexbox();
     @include flex-direction(column); 
-    // flex-flow: row wrap;
 }
 .wrapper {
   @include flex(1);
@@ -60,7 +59,7 @@ body,
     padding: 1rem;
     @include flexbox();
     @include flex-direction(column);
-    @include flex(1 50%);
+    @include flex(1 1 50%);
     @include order(1);
 }
 .main-content {
@@ -82,7 +81,6 @@ body,
   background-color: $background-color-white;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   color: $primary-text-color;
-  
   & h3 {
     padding-bottom: .5rem;
     padding-top: .75rem;
@@ -106,7 +104,6 @@ body,
 
 ul, ol {
   list-style: disc outside none;
-  // margin: 1em 0;
   padding: 0 0 0 30px;
 }
 ul ul, ol ul {
@@ -219,11 +216,17 @@ a {
 }
 
 .aside {
-  background: $background-color-sidebar;
-  padding: 0.5rem 2rem;
-  margin: 1rem -1rem -1rem -1rem;
-  @include flexbox();
+  // background: $background-color-sidebar;
+  // padding: 0.5rem 2rem;
+  // margin: 1rem -1rem -1rem -1rem;
+  // @include flexbox();
   // @include flex-direction(column);
+  // padding: 1rem;
+  padding: 1rem;
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex(1 1 100%);
+  @include order(1);
 }
 
 div.icons {
@@ -255,9 +258,6 @@ div.icons svg {
   //   fill: $secondary-text-color;
   // }
 }
-
-
-
 /* -------------------------------------------------------------------------*/
 /* !---------- Header ---------- */
 header {
@@ -304,13 +304,13 @@ header {
     // background-image: linear-gradient(rgba(0,61,138, 0.6), rgba(0,61,138, 0.8));
     background-size: cover;
     background-position: center top;
-    margin: -1rem -1rem 1rem -1rem;
+    // margin: -1rem -1rem 1rem -1rem;
   }
 
 #introduction p {
   margin: 0;
   // max-width: 60vw;
-  float: right;
+  // float: right;
   font-size: 1.2rem;
   font-weight: $font-weight-medium;
   // color: $white-text-color;
@@ -566,15 +566,14 @@ header {
     @include flex-flow(row wrap);
   }
   .item {
-    width: 29%;
-    margin-bottom: 2em;
+    width: 250px;
+    margin: 0 2em 2em 0;
   }
 }
 
 .item h2 a {
   // color: rgba($secondary-text-color, .9);
   font-size: $base-font-size * 1.5;
-
   &:hover,
     &:focus {
       // color: $secondary-text-color;
@@ -590,14 +589,16 @@ header {
     }
 }
 
-#homepage-text,
-#home article div.side-bar,
-.items #primary,
-.browse #primary,
-.contribution #primary,
-.simple-page #primary,
-.collections #primary {
-  max-width: 1000px;
+.main-content
+// #homepage-text,
+// #home article div.side-bar,
+// .items #primary,
+// .browse #primary,
+// .contribution #primary,
+// .simple-page #primary,
+// .collections #primary 
+{
+  max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
 }

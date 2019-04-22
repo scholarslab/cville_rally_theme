@@ -13,10 +13,10 @@ echo head(array(
 ?>
 
 <div id="primary">
-    <!-- <?php if (!$is_home_page): ?>
-    <p id="simple-pages-breadcrumbs"><?php echo simple_pages_display_breadcrumbs(); ?></p> -->
+    <?php if (!$is_home_page): ?>
+    <p id="simple-pages-breadcrumbs"><?php echo simple_pages_display_breadcrumbs(); ?></p>
     <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
-    <!-- <?php endif; ?> -->
+    <?php endif; ?>
 
   <div class="flex-container">
     <div class="main-content">
@@ -25,8 +25,6 @@ echo head(array(
       echo $this->shortcodes($text);
       ?>
     </div>
-    
-  <?php echo common('aside'); ?>
     
 </div>
 
