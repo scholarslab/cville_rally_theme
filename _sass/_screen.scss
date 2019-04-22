@@ -182,7 +182,7 @@ a {
   padding: 1rem;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   color: $primary-text-color;
-  @include flex(1 1 auto);
+  @include flex(1 0 auto);
 
   & h2 {
     padding-bottom: .5rem;
