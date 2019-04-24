@@ -5,7 +5,7 @@
   <?php if ($archiveText = get_theme_option('archive_text')): ?>
     <div class="flex-item">
       <div class="content">
-        <h2>Building the Archive</h2>
+        <!-- <h2>Building the Archive</h2> -->
     <?php echo $archiveText; ?>
         <br />
         <footer><a href="<?php echo url('/about'); ?>">About the Project</a></footer>
@@ -18,7 +18,7 @@
 <?php if ($donateText = get_theme_option('donate_text')): ?>
     <div class="flex-item">
       <div class="content">
-        <h2>Donate your Materials</h2>
+        <!-- <h2>Donate your Materials</h2> -->
         <?php echo $donateText; ?>
         <br />
         <footer><a href="<?php echo url('/contribution'); ?>">Contribute Materials</a></footer>
@@ -31,7 +31,7 @@
     <?php if ($valuesText = get_theme_option('values_text')): ?>
     <div class="flex-item">
       <div class="content">
-        <h2>Statement of Values</h2>
+        <!-- <h2>Statement of Values</h2> -->
         <?php echo $valuesText; ?>
       </div>
     </div>
@@ -42,7 +42,7 @@
   <?php if ($contactText = get_theme_option('contact_text')): ?>
     <div class="flex-item">
       <div class="content">
-        <h2>Questions?</h2>
+        <!-- <h2>Questions?</h2> -->
         <?php echo $contactText; ?>
       </div>
     </div>
