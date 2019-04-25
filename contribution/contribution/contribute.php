@@ -54,7 +54,6 @@ enableContributionAjaxForm(<?php echo js_escape(url($contributionPath.'/type-for
 
     <?php if ($contributionContact = get_theme_option('contribution_contact')): ?>
     <div class="side-bar">
-        <h3>QUESTIONS OR CONCERNS?</h3> 
         <?php echo $contributionContact; ?>
     </div>
     <?php endif; ?>
