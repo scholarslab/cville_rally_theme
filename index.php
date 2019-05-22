@@ -45,17 +45,19 @@
   <?php endif; ?>
 <!-- end Content Box: Questions? -->
 
-<!-- Browse Collection items -->
-<article class="aside">
+<!-- Browse Collection by Type -->
+<?php if (get_theme_option('Display Browse Types') == 1): ?>
+<div class="aside">
     <div class="content">
-      <?php echo common('aside'); ?>
+      <?php echo common('browse-types'); ?>
       </div>
-</article>
-<!-- end Browse Collection items -->
+</div>
+<?php endif; ?>
+<!-- end Browse Collection by Type -->
 
 <!-- Featured Items -->
 <?php if (get_theme_option('Display Featured Item') == 1): ?>
-<article class="aside">
+<div class="aside">
     <div class="content">
     <h2><?php echo __('Featured Items'); ?></h2>
     <div class="items browse">
@@ -65,7 +67,7 @@
     <p class="view-items-link"><a href="<?php echo html_escape(url('items')); ?>"><?php echo __('View All Items'); ?></a></p>
     </div>
     </div>
-</article>
+</div>
 <?php endif; ?>
 <!--end featured-items-->	
 

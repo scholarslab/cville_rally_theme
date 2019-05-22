@@ -1,4 +1,3 @@
-<!-- <div class="side-bar"> -->
   <h2>Browse the Digital Collection</h2>
       <div class="icons">
         <a href="<?php echo url('/items/browse?search=&advanced%5B0%5D%5Belement_id%5D=&advanced%5B0%5D%5Btype%5D=&advanced%5B0%5D%5Bterms%5D=&type=6&collection=&submit_search=Search+for+items'); ?>">
@@ -59,4 +58,3 @@
           </svg>
         <div class="text">Links</div>
       </div></a>
-<!-- </div> -->

@@ -208,7 +208,25 @@ function cville_theme_logo()
     if ($logo) {
         $storage = Zend_Registry::get('storage');
         $uri = $storage->getUri($storage->getPathByType($logo, 'theme_uploads'));
-        return '<img src="' . $uri . '" alt="' . get_theme_option('logo_alt') . '" width="250" class="logo-long"/>';
+        return '<img src="' . $uri . '" alt="' . get_theme_option('logo_alt') . '" />';
+    }
+
+}
+
+/**
+ * Get the theme's shortcut icon tag.
+ *
+ * @package Omeka\Function\View\Head
+ * @uses get_theme_option()
+ * @return string|null
+ */
+function cville_theme_icon()
+{
+    $icon = get_theme_option('shortcut_icon');
+    if ($icon) {
+        $storage = Zend_Registry::get('storage');
+        $uri = $storage->getUri($storage->getPathByType($icon, 'theme_uploads'));
+        return '<link rel="shortcut icon" sizes="32x32" href="' . $uri . '" />';
     }
 
 }

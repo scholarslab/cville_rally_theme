@@ -52,7 +52,7 @@ body,
 .flex-container {
     @include flexbox();
     @include flex-flow(row wrap);
-    @include justify-content(space-around);
+    @include justify-content(center);
 }
   
 .flex-item {
@@ -216,12 +216,6 @@ a {
 }
 
 .aside {
-  // background: $background-color-sidebar;
-  // padding: 0.5rem 2rem;
-  // margin: 1rem -1rem -1rem -1rem;
-  // @include flexbox();
-  // @include flex-direction(column);
-  // padding: 1rem;
   padding: 1rem;
   @include flexbox();
   @include flex-direction(column);
@@ -233,7 +227,6 @@ div.icons {
   float: left;
   width: 100px;
   padding: .25em .75em;
-  margin-right: 1.5rem;
 
   a {
     text-align: center;
@@ -379,19 +372,6 @@ header {
   padding:.5em;
   border:1px blue dashed;
 }
-
-// .logo-short {
-//   display: none;
-// }
-// @media all and (max-width: 600px) {
-
-//   .logo-long {
-//     display: none;
-//   }
-//   .logo-short {
-//     display: block;
-//   }
-// }
 
 /* !---------- Primary Nav Bar ---------- */
 .navigation {
@@ -549,20 +529,11 @@ header {
 /* -------------------------------------------------------------------------*/
 /* Browse and Item Pages */
 
-// .browse,
-//   .tags,
-//   .items,
-//   .collection {
-//       .secondary-nav li, #secondary-nav li{
-//           @include line-button;
-//       }
-// }
-
 .browse, 
 .collection { /* browse view */
   .items {
     @include flexbox();
-    @include justify-content(space-between);
+    @include justify-content(space-evenly);
     @include flex-flow(row wrap);
   }
   .item {
@@ -590,17 +561,17 @@ header {
 }
 
 .main-content
-// #homepage-text,
-// #home article div.side-bar,
-// .items #primary,
-// .browse #primary,
-// .contribution #primary,
-// .simple-page #primary,
-// .collections #primary 
 {
   max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media all and (max-width: 650px) { 
+  .main-content {
+    margin-left:0px !important;
+    margin-right:0px !important;
+  }
 }
 //Simple Pages
 .simple-page .page-text {

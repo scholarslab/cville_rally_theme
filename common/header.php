@@ -2,16 +2,17 @@
 <html lang="<?php echo get_html_lang(); ?>">
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" sizes="32x32" href="//www.library.virginia.edu/images/icon-32.png">
+  <!-- Shortcut Icon -->
+  <?php if($icon = cville_theme_icon()): ?>
+            <?php echo $icon; ?>
+          <?php endif;?>
+  <!-- End Shortcut Icon -->       
   <title><?php echo option('site_title'); echo isset($title) ? ' | ' . strip_formatting($title) : ''; ?>
   </title>
   <meta name="viewport" content="width=device-width">
   <?php if ($description = option('description')): ?>
   <meta name="description" content="<?php echo $description; ?>">
   <?php endif; ?>
-  <script src="//use.typekit.net/tgy5tlj.js"></script>
-
-<script>try{Typekit.load();}catch(e){}</script>
   <?php echo auto_discovery_link_tags(); ?>
 
 <!-- Plugin Stuff -->
@@ -80,21 +81,6 @@
   <?php
   echo head_js();
   ?>
-<!-- Piwik -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//analytics.lib.virginia.edu/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', 33]);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <noscript><p><img src="//analytics.lib.virginia.edu/piwik.php?idsite=33" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => 'home blog logged-in admin-bar no-bg ' . @$bodyclass)); ?>
@@ -145,7 +131,6 @@
       <?php endif; ?>
     <?php endif; ?>
 <!-- end Homepage Banner Image and Intro text -->
-    
   </header>
   
   <div class="wrapper">
