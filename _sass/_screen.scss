@@ -332,6 +332,9 @@ header {
   margin-bottom: -0.6rem;
   
 }
+.logo {
+  max-width: 250px;
+}
 
 /* !---------- Top Nav Bar ---------- */
 .topnav {
@@ -458,12 +461,12 @@ header {
 .item-pagination a {
   display: block;
   text-decoration: none;
-  background: lighten($link-color, 65%); //rgba($link-color, .05)
+  background: lighten($link-color, 65%); 
   padding: .25em .75em;
   margin-right: 2rem;
     &:hover,
     &:focus {
-      background: lighten($link-color, 50%); //rgba($link-color, .125)
+      background: lighten($link-color, 50%); 
     }
 }
 
@@ -533,12 +536,16 @@ header {
 .collection { /* browse view */
   .items {
     @include flexbox();
-    @include justify-content(space-evenly);
+    @include justify-content(space-between);
     @include flex-flow(row wrap);
   }
   .item {
     width: 250px;
-    margin: 0 2em 2em 0;
+    margin: 0 1em 2em 0;
+    @media all and (max-width: 650px) {
+      margin: 0 0 1em 0;
+      max-width: 200px;
+    }
   }
 }
 
