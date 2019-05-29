@@ -73,7 +73,7 @@ Use this section to provide content for your site's homepage. All of these secti
 
     Both the banner image and introduction text are optional, and can be used together or individually. If no image and no text is provided, your site will not have a banner. If you provide introduction text but no image, your text will display over a color gradient banner, the color selected in **Header Color**. If you provide a banner image with no introduction text, your image will not have the color overlay. In this case, if you'd like the color overlay on your image, type in a few blank spaces into the introduction text box (no text, just use your space bar to fill in some blank content).
 
-    | Omeka Admin | Public Site |
+| Omeka Admin | Public Site |
 |:-------------|:------------------|
 | Homepage Banner Background & Introduction Text | ![Screen shot of public homepage banner](https://raw.githubusercontent.com/scholarslab/digital-collect-toolkit/master/assets/images/banner-1.png) |
 | Introduction Text only | ![Screen shot of public homepage banner](https://raw.githubusercontent.com/scholarslab/digital-collect-toolkit/master/assets/images/banner-2.png) |
