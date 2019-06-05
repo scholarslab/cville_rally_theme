@@ -61,6 +61,10 @@ Use this section to provide content for your site's header and footer. All of th
 - **Logo Image Accessibility Alt Text**: Provide descriptive alt text for your logo image for use with screen readers.
 - **Footer Text**: Provide some content for your page footer. This custom theme already provides site navigation in the footer, this box is for additional content.
 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/theme-settings-7.png" alt="Screen shot of Theme Configuration page" width="600rem"/>
+
+- **Shortcut Icon File**: Provide an image file to appear in your browser tab/address bar. This must be a square image, 16x16 or 32x32 pixels, and must be a PNG file in order to upload through your Omeka theme configuration.
+
 ### Customize your Site's Homepage Content
 Use this section to provide content for your site's homepage. All of these sections are optional, pick and choose what works best for your site.
 
@@ -103,8 +107,13 @@ Use the toolbox buttons to format your content, add headings, links, and lists. 
 
 Check the boxes for additional content to be displayed on your homepage. All of these are optional. You must have featured items, collections and/or exhibits in your Omeka collection for some options to be relevant. 
 
-<img src="https://raw.githubusercontent.com/scholarslab/digital-collect-toolkit/master/assets/images/theme-settings-6.png" alt="Screen shot of Theme Configuration page" width="600rem"/>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/theme-settings-8.png" alt="Screen shot of Theme Configuration page" width="600rem"/>
 
+- **Display Browse Collection by Type**: Check this box if you wish to show 'Browse the Digital Collection' on the homepage. Includes icons for Item Types: Still Image (Label: Photos), Moving Image (Label: Videos), Text (Label: Stories), Hyperlink (Label: Links): 
+    
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/content-7.png" alt="Screen shot of Theme Configuration page" width="300rem"/>
+
+    To customize what is included in this box, you must edit the file `browse-types.php`, found in the `/common` folder within `themes/cville_rally_theme`. 
 - **Display Featured Items**: Check this box if you wish to show three featured items on the homepage. If you have more than three featured items in your Omeka collection, these will show random featured items each time the site is refreshed.
 - **Display Featured Collection**: Check this box if you wish to show a featured collection on the homepage.
 - **Display Featured Exhibit**: Check this box if you wish to show a featured exhibit on the homepage. For use with the [Exhibit Builder](https://scholarslab.github.io/digital-collect-toolkit/docs/omeka-setup/omeka-plugins#exhibit-builder) plugin.
