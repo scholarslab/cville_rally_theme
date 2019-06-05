@@ -45,7 +45,7 @@ Use this section to customize your site's color scheme. These boxes will automat
 - **Header Color**: Determines the color of the widest section of the page header, as well as the overlay color of the homepage's [banner image](#homepage-banner)
 - **Header Text Color**: Determines the color of the text in the widest section of the page header, specifically, the text you provide in the **Header Site Title** and **Header Tagline Text** in the [Header and Footer](#header-and-footer-content) content section, and the [Homepage Banner Introduction Text](#homepage-banner). 
 - **Navigation Background Color**: Determines the color of the primary navigation bar, the Omeka login bar along the top of the page, and the page footer.
-- **Navigation Text Color**: Determines the color of the text in the sections listed above. The color of the navigation links in the footer, and the Omeka login links in top admin bar, are set to be a shade darker than the color given here, and show full brightness when you hover over these links. For instructions on how to customize your site's navigation, see [here](https://scholarslab.github.io/digital-collect-toolkit/docs/omeka-setup/omeka-admin#customizing-site-navigation)
+- **Navigation Text Color**: Determines the color of the text in the sections listed above. The color of the navigation links in the footer, and the Omeka login links in top admin bar, are set to be a shade darker than the color given here, and show full brightness when you hover over these links. For instructions on how to customize your site's navigation, see [here](http://digitalcollecting.lib.virginia.edu/toolkit/docs/omeka-setup/omeka-admin/)
 - **Headings Text Color**: Determines the color of the headings in your site (for html tags h1, h2, h3, h4).
 
 ### Header and Footer Content
@@ -86,7 +86,7 @@ Use this section to provide content for your site's homepage. All of these secti
 
 Use the following sections for the primary content of your homepage. All of the following sections are optional, please pick and choose what will work best for your site. 
 
-This theme's homepage content can be created with up to four content boxes. The first two are designed for use with a Contribution page (/contribution) and an 'About' page (/about), created with the [Simple Pages](https://scholarslab.github.io/digital-collect-toolkit/docs/omeka-setup/omeka-plugins#simple-pages) plugin. If you do not want to use these content boxes with pre-defined footer links, leave sections *Homepage Content Box #1: About the Archive* and *Homepage Content Box #2: Donate Materials* empty, and these will not appear on your site. 
+This theme's homepage content can be created with up to four content boxes. The first two are designed for use with a Contribution page (/contribution) and an 'About' page (/about), created with the [Simple Pages](http://digitalcollecting.lib.virginia.edu/toolkit/docs/omeka-setup/omeka-plugins/) plugin. If you do not want to use these content boxes with pre-defined footer links, leave sections *Homepage Content Box #1: About the Archive* and *Homepage Content Box #2: Donate Materials* empty, and these will not appear on your site. 
 
 The other two content boxes, *Homepage Content Box #3* and *Homepage Content Box #4*, do not have any pre-determined footer links and can be used for any type of content. Pick and choose which content boxes you'd like to use for your site, and leave empty any you do not wish to appear. The boxes will automatically resize to fit the screen, and depending on how many you select to use, may stretch across the whole page. 
 
@@ -116,7 +116,7 @@ Check the boxes for additional content to be displayed on your homepage. All of 
     To customize what is included in this box, you must edit the file `browse-types.php`, found in the `/common` folder within `themes/cville_rally_theme`. 
 - **Display Featured Items**: Check this box if you wish to show three featured items on the homepage. If you have more than three featured items in your Omeka collection, these will show random featured items each time the site is refreshed.
 - **Display Featured Collection**: Check this box if you wish to show a featured collection on the homepage.
-- **Display Featured Exhibit**: Check this box if you wish to show a featured exhibit on the homepage. For use with the [Exhibit Builder](https://scholarslab.github.io/digital-collect-toolkit/docs/omeka-setup/omeka-plugins#exhibit-builder) plugin.
+- **Display Featured Exhibit**: Check this box if you wish to show a featured exhibit on the homepage. For use with the [Exhibit Builder](http://digitalcollecting.lib.virginia.edu/toolkit/docs/omeka-setup/omeka-plugins/#exhibit-builder) plugin.
 - **Display Recent Items**: Check this box if you wish to show recent items to be displayed on the homepage. These will appear in the order in which they were mostly recently added to the archive.
 
 ### Contribution Page: Form Submission Instructions and Information
