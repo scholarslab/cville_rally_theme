@@ -104,16 +104,14 @@
     </div> 
 
     <div id="site-title">
-          <h2><a href="<?php echo url('/'); ?>">
-          <?php if($siteTitle = get_theme_option('Site Title')): ?>
-                <?php echo $siteTitle; ?>
-              <?php endif;?>
-          </a></h2>
-          <h1><a href="<?php echo url('/'); ?>">
-              <?php if($tagline = get_theme_option('Tagline Text')): ?>
-                <?php echo $tagline; ?>
-              <?php endif;?>
-          </a></h1>
+      <a href="<?php echo url('/'); ?>">
+        <h2><?php if($siteTitle = get_theme_option('Site Title')): ?>
+              <?php echo $siteTitle; ?>
+            <?php endif;?></h2>
+        <h1><?php if($tagline = get_theme_option('Tagline Text')): ?>
+              <?php echo $tagline; ?>
+            <?php endif;?></h1>
+      </a>
     </div>
 
     <nav class="navigation" role="navigation">

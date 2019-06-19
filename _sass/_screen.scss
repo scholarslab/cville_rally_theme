@@ -344,6 +344,7 @@ header {
   @include flexbox();
   @include flex-flow(row wrap);
   @include justify-content(space-between);
+  @include align-items(center);
 
   a {
     // color: $white-text-color;
