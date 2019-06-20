@@ -90,7 +90,6 @@
   <header role="banner">
     <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
     <div class="topnav" role="navigation">
-      <?php echo link_to_home_page(option('site_title')); ?>
       <?php if ($logo = cville_theme_logo() && $logoUrl = get_theme_option('logo_url')): ?> 
         <a  href="<?php echo $logoUrl; ?>">
           <?php if($logo = cville_theme_logo()): ?>
@@ -104,14 +103,12 @@
     </div> 
 
     <div id="site-title">
-      <a href="<?php echo url('/'); ?>">
-        <h2><?php if($siteTitle = get_theme_option('Site Title')): ?>
-              <?php echo $siteTitle; ?>
-            <?php endif;?></h2>
-        <h1><?php if($tagline = get_theme_option('Tagline Text')): ?>
+      <span style="text-transform:uppercase; font-size:20px;"><?php echo link_to_home_page(option('site_title')); ?></span>
+      <h1><a href="<?php echo url('/'); ?>">
+       <?php if($tagline = get_theme_option('Tagline Text')): ?>
               <?php echo $tagline; ?>
-            <?php endif;?></h1>
-      </a>
+            <?php endif;?>
+      </a></h1>
     </div>
 
     <nav class="navigation" role="navigation">

@@ -270,18 +270,8 @@ header {
     line-height: $base-line-height * 1.5;
     font-family: $font-family-main;
     font-weight: $font-weight-medium;
+    a:hover {text-decoration: none;}
     }
-    & h2 {
-      margin: 0; 
-      // padding: 1.5rem;
-      overflow: hidden;
-      text-overflow: inherit;
-      // color: $white-text-color;
-      font-size: $base-font-size * 1.5;
-      line-height: $base-line-height * 1.5;
-      font-family: $font-family-main;
-      font-weight: $font-weight-medium;
-      }
     & a {
       // color: $white-text-color;
       text-decoration: none;
@@ -289,6 +279,9 @@ header {
     & a:visited {
       // color: $white-text-color;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
 }
 
@@ -333,7 +326,7 @@ header {
   
 }
 .logo {
-  max-width: 250px;
+  max-width: 300px;
 }
 
 /* !---------- Top Nav Bar ---------- */
@@ -343,7 +336,7 @@ header {
   padding: 1rem;
   @include flexbox();
   @include flex-flow(row wrap);
-  @include justify-content(space-between);
+  @include justify-content(flex-start);
   @include align-items(center);
 
   a {
@@ -387,7 +380,7 @@ header {
   // background: $background-color-secondary;
   @include flexbox();
   @include flex-flow(row wrap);
-  @include justify-content(flex-start);
+  @include justify-content(flex-end);
 
   & a {
     // color: $white-text-color;
