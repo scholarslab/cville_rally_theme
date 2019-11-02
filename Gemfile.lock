@@ -16,7 +16,7 @@ GEM
       addressable (>= 2.1.1)
       eventmachine (>= 0.12.9)
     eventmachine (0.12.10)
-    ffi (1.0.11)
+    ffi (1.11.1)
     fssm (0.2.9)
     growl (1.0.3)
     guard (1.2.1)
