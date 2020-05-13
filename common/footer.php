@@ -4,7 +4,7 @@
 <footer class="footer" role="contentinfo">
     <nav class="navigation" id="bottom-nav">
         <?php 
-        echo link_to_home_page('Digital Collecting');
+        echo link_to_home_page(option('site_title'));
         echo public_nav_main(); ?>
     </nav>
 

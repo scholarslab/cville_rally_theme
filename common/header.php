@@ -103,7 +103,7 @@
     </div> 
 
     <div id="site-title">
-      <span style="text-transform:uppercase; font-size:20px;"><?php echo link_to_home_page(option('site_title')); ?></span>
+      <span style="font-size:20px;"><?php echo link_to_home_page(option('site_title')); ?></span>
       <h1><a href="<?php echo url('/'); ?>">
        <?php if($tagline = get_theme_option('Tagline Text')): ?>
               <?php echo $tagline; ?>
