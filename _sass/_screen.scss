@@ -35,8 +35,13 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   text-rendering: optimizeLegibility;
+  // word-wrap: break-word;
+}
+
+body.items.show {
   word-wrap: break-word;
 }
+
 body,
 .wrapper {
     @include flexbox();
