@@ -7,7 +7,7 @@ function filter_contribution_description($components) {
 }
 
 function filter_contribution_title($components) {
-    $components['description'] = "For example, “Police in downtown Charlottesville” or “What I witnessed from the Rotunda.”";
+    $components['description'] = "Provide a short title for your contributed item";
     return $components;
 }
 
