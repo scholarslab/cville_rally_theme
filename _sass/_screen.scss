@@ -35,7 +35,7 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   text-rendering: optimizeLegibility;
-  // word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 body.items.show {
