@@ -62,10 +62,11 @@ function is_contribution_form() {
 
 function filter_for_anonymity($text, $args) {
     $record = $args['record'];
-    $contributedItem = get_db()->getTable('ContributionContributedItem')->findByItem($record);
-    
-    if ($contributedItem->anonymous != 0) {
-        $text = 'Anonymous';
+    if (plugin_is_active('Contribution')) {
+        $contributedItem = get_db()->getTable('ContributionContributedItem')->findByItem($record);
+        if ($contributedItem->anonymous != 0) {
+            $text = 'Anonymous';
+        }
     }
 
     return $text;
@@ -82,8 +83,13 @@ function filter_for_anonymity($text, $args) {
 function filter_item_citation($citation, $args) {
     $citation = '';
     $item = $args['item'];
-    $contribItem = get_db()->getTable('ContributionContributedItem')->findByItem($item);
-    if ($contribItem->anonymous) {
+    $isAnonymous = false;
+    if (plugin_is_active('Contribution')) {
+        $contribItem = get_db()->getTable('ContributionContributedItem')->findByItem($item);
+        $isAnonymous = $contribItem->anonymous;
+    }
+
+    if ($isAnonymous) {
         $creator = 'Anonymous';
     } else {
         $creators = metadata($item, array('Dublin Core', 'Creator'), array('all' => true));
