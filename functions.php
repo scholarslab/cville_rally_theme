@@ -114,7 +114,9 @@ function filter_item_citation($citation, $args) {
             }
         }
     }
-    $citation .= "$creator, ";
+    if (!empty($creator)) {
+        $citation .= "$creator, ";
+    }
 
     if ($title = metadata($item, 'display_title')) {
         $citation .= "&#8220;$title,&#8221; ";
