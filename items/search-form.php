@@ -31,13 +31,12 @@ $formAttributes['method'] = 'GET';
                 'type',
                 @$_REQUEST['type'],
                 array('id' => 'item-type-search'),
-                get_table_options('ItemType')
-                // label_table_options(array(
-                //     '6' => __('Photo'),
-                //     '3' => __('Video'),
-                //     '1' => __('Story'),
-                //     '11' => __('Link')
-                // ))
+                label_table_options(array(
+                    '6' => __('Photo'),
+                    '3' => __('Video'),
+                    '1' => __('Story'),
+                    '11' => __('Link')
+                ))
             );
         ?>
         </div>

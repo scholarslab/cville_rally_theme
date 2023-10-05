@@ -7,7 +7,7 @@ function filter_contribution_description($components) {
 }
 
 function filter_contribution_title($components) {
-    $components['description'] = "Provide a short title for your contributed item";
+    $components['description'] = "For example, “Police in downtown Charlottesville” or “What I witnessed from the Rotunda.”";
     return $components;
 }
 
@@ -62,11 +62,10 @@ function is_contribution_form() {
 
 function filter_for_anonymity($text, $args) {
     $record = $args['record'];
-    if (plugin_is_active('Contribution')) {
-        $contributedItem = get_db()->getTable('ContributionContributedItem')->findByItem($record);
-        if ($contributedItem->anonymous != 0) {
-            $text = 'Anonymous';
-        }
+    $contributedItem = get_db()->getTable('ContributionContributedItem')->findByItem($record);
+    
+    if ($contributedItem->anonymous != 0) {
+        $text = 'Anonymous';
     }
 
     return $text;
@@ -83,13 +82,8 @@ function filter_for_anonymity($text, $args) {
 function filter_item_citation($citation, $args) {
     $citation = '';
     $item = $args['item'];
-    $isAnonymous = false;
-    if (plugin_is_active('Contribution')) {
-        $contribItem = get_db()->getTable('ContributionContributedItem')->findByItem($item);
-        $isAnonymous = $contribItem->anonymous;
-    }
-
-    if ($isAnonymous) {
+    $contribItem = get_db()->getTable('ContributionContributedItem')->findByItem($item);
+    if ($contribItem->anonymous) {
         $creator = 'Anonymous';
     } else {
         $creators = metadata($item, array('Dublin Core', 'Creator'), array('all' => true));
@@ -114,9 +108,7 @@ function filter_item_citation($citation, $args) {
             }
         }
     }
-    if (!empty($creator)) {
-        $citation .= "$creator, ";
-    }
+    $citation .= "$creator, ";
 
     if ($title = metadata($item, 'display_title')) {
         $citation .= "&#8220;$title,&#8221; ";

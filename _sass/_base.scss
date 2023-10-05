@@ -2,7 +2,7 @@
 // Imports
 
 // @import "normalize";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
 // ---------------------------------------------------------------------------
@@ -34,13 +34,13 @@ $link-active-color              : darken($link-color, 30%);
 // ---------------------------------------------------------------------------
 // Typography
 
-$font-family-main: 'franklin-gothic-urw','Open Sans',arial,sans-serif;
+$font-family-main: 'franklin-gothic-urw','Roboto',arial,sans-serif;
 $font-secondary: 'franklingothic-demi', sans-serif;
 $font-family-condensed: 'franklin-gothic-urw-cond',arial narrow,sans-serif;
 $font-family-compressed: 'franklin-gothic-urw-comp',arial narrow,sans-serif;
 $base-font-size: 16px;
 $base-line-height: 24px;
-$font-family-title: 'franklin-gothic-urw','Open Sans',arial,sans-serif; 
+$font-family-title: 'franklin-gothic-urw','Roboto',arial,sans-serif; 
 
 $spacing-unit: $base-line-height;
 

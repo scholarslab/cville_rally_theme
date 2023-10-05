@@ -15,7 +15,9 @@ if ($type->isFileRequired()):
     </div>
     <div class="inputs five columns omega">
         250Mb size limit.<br>
-        <?php echo $this->formFile('contributed_file', array('class' => 'fileinput')); ?>
+        <?php // echo $this->formFile('contributed_file', array('class' => 'fileinput')); ?>
+<input type="file" name="contributed_file[]" id="contributed_file" class="fileinput" multiple>
+
     </div>
 </div>
 

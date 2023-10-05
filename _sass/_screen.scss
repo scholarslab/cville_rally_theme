@@ -35,13 +35,7 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   text-rendering: optimizeLegibility;
-  word-wrap: break-word;
 }
-
-body.items.show {
-  word-wrap: break-word;
-}
-
 body,
 .wrapper {
     @include flexbox();
@@ -149,7 +143,6 @@ a {
 }
 #main h1 {
   font-size: $base-font-size * 2;
-  line-height: $base-line-height * 1.5;
   // color: $secondary-text-color;
   margin-bottom: 2rem;
 }
