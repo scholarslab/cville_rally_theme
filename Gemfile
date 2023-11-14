@@ -10,7 +10,7 @@ gem "css_parser"
 gem "susy", "~> 1.0.rc.0"
 gem "compass-validator"
 
-gem "rake", "~> 0.9.2"
+gem "rake", "~> 12.3.3"
 
 gem "guard"
 gem "guard-shell"
